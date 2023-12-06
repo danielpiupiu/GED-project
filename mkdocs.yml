@@ -30,7 +30,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://fosstodon.org/@squidfunk
+      link: https://github.com/danielpiupiu/GED-project
       name: Grupo GED no GitHub
     - icon: fontawesome/brands/facebook
       link: https://www.facebook.com/Eletrobras
