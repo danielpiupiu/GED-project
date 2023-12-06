@@ -4,10 +4,13 @@ nav:
   - Home: index.md
   - Taxonomia: taxonomia.md
   - Reduso de uso do markdown: resumo_md.md
+repo_url: https://github.com/danielpiupiu/GED-project
 theme:
   name: material
   logo: img/brasao_GED.png
   favicon: img/brasao_GED.png
+  icon:
+    repo: fontawesome/brands/github
   language: pt-BR
   features:
   - navigation.path
@@ -29,9 +32,6 @@ theme:
       primary: green
 extra:
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/danielpiupiu/GED-project
-      name: Material do Grupo GED no GitHub
     - icon: fontawesome/brands/facebook
       link: https://www.facebook.com/Eletrobras
       name: Eletrobras no Facebook
