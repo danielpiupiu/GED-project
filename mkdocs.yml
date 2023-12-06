@@ -1,1 +1,52 @@
-site_name: My Docs
+site_name: GED Eletrobras
+site_url: https://não_esqueca_de_alterar_a_url.com/
+nav:
+  - Home: index.md
+  - Taxonomia: taxonomia.md
+  - Reduso de uso do markdown: resumo_md.md
+theme:
+  name: material
+  logo: img/brasao_GED.png
+  favicon: img/brasao_GED.png
+  language: pt-BR
+  features:
+  - navigation.path
+  - navigation.footer
+  palette: 
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+      primary: lime
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+      primary: green
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://fosstodon.org/@squidfunk
+      name: Grupo GED no GitHub
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/Eletrobras
+      name: Eletrobras no Facebook
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/company/eletrobras
+      name: Eletrobras no LinkedIn
+    - icon: fontawesome/brands/x-twitter 
+      link: https://twitter.com/Eletrobras
+      name: Eletrobras no Twitter
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/eletrobrasoficial/
+      name: Eletrobras no Instagram
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/EletrobrasEnergia
+      name: Eletrobras no YouTube
+    - icon: fontawesome/brands/soundcloud
+      link: https://soundcloud.com/podcasteletrobras
+      name: Eletrobras no SoundCloud
