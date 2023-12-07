@@ -1,5 +1,57 @@
-site_name: GED Eletrobras
-site_url: https://não_esqueca_de_alterar_a_url.com/
+extra:
+  social:
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/Eletrobras
+      name: Eletrobras no Facebook
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/eletrobrasoficial/
+      name: Eletrobras no Instagram
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/company/eletrobras
+      name: Eletrobras no LinkedIn
+    - icon: fontawesome/brands/soundcloud
+      link: https://soundcloud.com/podcasteletrobras
+      name: Eletrobras no SoundCloud
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/EletrobrasEnergia
+      name: Eletrobras no YouTube
+    - icon: fontawesome/brands/x-twitter 
+      link: https://twitter.com/Eletrobras
+      name: Eletrobras no Twitter
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - tables
 nav:
   - Home: 'index.md'
   - 'Especificações Resumidas':
@@ -10,7 +62,11 @@ nav:
   - 'Taxonomia': 'taxonomia.md'
   - 'Instruções':
     - 'Uso do markdown': 'resumo_md.md'
+plugins:
+  - search
 repo_url: https://github.com/danielpiupiu/GED-project
+site_name: GED Eletrobras
+site_url: https://não_esqueca_de_alterar_a_url.com/
 theme:
   name: material
   logo: img/brasao_GED.png
@@ -19,8 +75,9 @@ theme:
     repo: fontawesome/brands/github
   language: pt-BR
   features:
-  - navigation.path
+  - content.tabs.link
   - navigation.footer
+  - navigation.path
   palette: 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -36,23 +93,3 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
       primary: green
-extra:
-  social:
-    - icon: fontawesome/brands/facebook
-      link: https://www.facebook.com/Eletrobras
-      name: Eletrobras no Facebook
-    - icon: fontawesome/brands/linkedin 
-      link: https://www.linkedin.com/company/eletrobras
-      name: Eletrobras no LinkedIn
-    - icon: fontawesome/brands/x-twitter 
-      link: https://twitter.com/Eletrobras
-      name: Eletrobras no Twitter
-    - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/eletrobrasoficial/
-      name: Eletrobras no Instagram
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/EletrobrasEnergia
-      name: Eletrobras no YouTube
-    - icon: fontawesome/brands/soundcloud
-      link: https://soundcloud.com/podcasteletrobras
-      name: Eletrobras no SoundCloud

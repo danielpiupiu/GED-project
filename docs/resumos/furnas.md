@@ -1,6 +1,7 @@
 # ORIENTAÇÕES PARA ENTREGA DE DOCUMENTOS TECNICOS DE ENGENHARIA
 
 ## OBJETIVO
+
 Este manual apresenta os requisitos necessários para a entrega de documentos técnicos de engenharia para Furnas e o sistema GreenDocs, pelo qual estes documentos devem ser tramitados, com o objetivo de:
 - Proteção contra perda de confidencialidade, uso impróprio ou perda de integridade;
 - Distribuição, acesso, recuperação e uso;
@@ -9,6 +10,7 @@ Este manual apresenta os requisitos necessários para a entrega de documentos t�
 - Retenção e disposição.
 
 ## TERMOS E DEFINIÇÕES
+
 | Termo | Definição |
 |:-----:|:------|
 | Formato | Documento modelo para desenvolvimento dos documentos do projeto Word, Excel, Cad. |
@@ -16,18 +18,20 @@ Este manual apresenta os requisitos necessários para a entrega de documentos t�
 | GRD | Guia de Remessa de Documentos Técnicos. Arquivo Excel preenchido pelo projetista com informações referentes aos documentos de sua responsabilidade. Através deste arquivo que o GreenDocs permite o upload dos documentos |
 | Greendocs | Software de gestão eletrônica de documentos utilizado por Furnas. |
 | KOM | Kick Off Meeting – Reunião Inicial do Projeto |
-| LD | Lista de Documentos. Arquivo Excel preenchido pelo fornecedor para reserva de numeração no GreenDocs. |
+| LD/Peder | Lista de Documentos. Arquivo Excel preenchido pelo fornecedor para reserva de numeração no GreenDocs. |
 
 ## DOCUMENTOS DE REFERÊNCIA
+
 | Número do documento | Título |
 |:-----:|:------|
-| LD | LD |
+| PEDER | LD / Peder |
 | NOE-01 | Norma Identificação Operacional de Equipamentos do Sistema Eletroenergético |
 | GRD | Guia de Remessa de Documentos Técnicos |
 | | Formatos e Desenhos Padrões |
 | | Procedimento para Execução de Desenho em AutoCad. |
 
 ## DOCUMENTOS DE PROJETO DE ENGENHARIA
+
 Os documentos técnicos de projeto de engenharia são gerenciados pelo sistema GreenDocs. A entrada destes documentos no GreenDocs será feita através da GRD padrão do projeto, juntamente com os documentos já previstos na PEDER.
 
 Entende-se por documentos técnicos de projeto de engenharia os documentos como, por exemplo, fluxogramas, especificações técnicas, folhas de dados, plantas, desenhos técnicos, memórias de cálculo, listas de materiais, memoriais descritivos e diagramas para uso em projetos. Estes documentos serão tramitados pelo GreenDocs.
@@ -35,26 +39,29 @@ Entende-se por documentos técnicos de projeto de engenharia os documentos como,
 Os documentos gerenciais, contábeis e financeiros como, por exemplo, contratos, cartas, relatórios de medição, cronogramas, EAP, listas de pendências, documentações legais, relatórios de diário de obra, boletins de acompanhamento, alvarás e licenças e notas fiscais não serão tramitados pelo GreenDocs.
 
 ### LISTA DE DOCUMENTOS
+
 A PEDER é o primeiro documento a ser gerado pelo fornecedor e precisa ser enviada via sistema de GED para a solicitação das numerações dos documentos técnicos de projeto de engenharia.
 
 Deverá ser preenchida conforme instruções deste Manual e para todos os documentos técnicos de projeto de engenharia que serão desenvolvidos pelo projetista.
 
 O modelo de PEDER é um arquivo em excel cujo o modelo não pode ser alterado pelo projetista.
 
-![Exemplo LD/PEDER - Furnas.](/img/furnas_ld_peder.jpg) <br>
-[A numeração dos documentos é gerada pelo sistema a partir das informações preenchidas na PEDER.](/img/furnas_ld_peder.jpg)
+![Exemplo LD/PEDER - Furnas.](../img/furnas_ld_peder.jpg) <br>
+[A numeração dos documentos é gerada pelo sistema a partir das informações preenchidas na PEDER.](../img/furnas_ld_peder.jpg)
 
-[Com a numeração gerada, o projetista pode realizar o upload do documento através da GRD.](/img/furnas_grd.jpg) <br>
-![Exemplo GRD - Furnas.](/img/furnas_grd.jpg)
+[Com a numeração gerada, o projetista pode realizar o upload do documento através da GRD.](../img/furnas_grd.jpg) <br>
+![Exemplo GRD - Furnas.](../img/furnas_grd.jpg)
 
 O projetista irá importar a PEDER via GreenDocs até 7 dias úteis após o KOM. Em caso de divergência na PEDER, a equipe do Arquivo Técnico de Furnas entrará em contato com o projetista.
 
 A revisão da PEDER para inclusão de novos documentos poderá ser feita na primeira semana de cada mês.
 
 ### SISTEMÁTICA DA DOCUMENTAÇÃO TECNICA DE ENGENHARIA
+
 Os documentos técnicos de projeto de engenharia devem ser gerados com base nos padrões de numeração, formatos e tamanhos indicados neste manual.
 
 #### NUMERAÇÃO DE DOCUMENTOS
+
 O Número do Documento é gerado pelo GreenDocs, com base nas informações da PEDER entregue pelo projetista, e segue a regra:
 
 > **`UUU - AAAAAAAA - TT - DDD - SSSS`**
@@ -142,7 +149,7 @@ Ao final do projeto o projetista deverá emitir a LD informando a última revis�
 Os números reservados e não utilizados devem ser cancelados dentro do GreenDocs através do botão “Cancelar Reserva”, esta ação pode ser realizada em lote ou individual conforme ilustrado na FIGURA 1.
 
 **FIGURA 1** – CANCELAR RESERVA DE NUMERAÇÃO <br>
-![Figura 1 - Furnas.](/img/furnas_figura1.jpg)
+![Figura 1 - Furnas.](../img/furnas_figura1.jpg)
 
 #### NOMEAÇÃO E EXTENSÃO DE ARQUIVOS ELETRÔNICOS
 
@@ -175,7 +182,7 @@ Para documentos elaborados em AutoCad devem ser verificados os critérios para e
 O projetista é responsável por garantir o correto preenchimento dos documentos, e deverá seguir as instruções de preenchimento sinalizadas na FIGURA 2 e as informações preenchidas conforme indicado na TABELA 5 abaixo.
 
 **FIGURA 2** – LEGENDA PARA DOCUMENTOS - EXEMPLO WORD <br>
-![Figura 2 - Furnas.](/img/furnas_figura2.jpg)
+![Figura 2 - Furnas.](../img/furnas_figura2.jpg)
 
 **TABELA 5** – INFORMAÇÕES QUE DEVEM SER PREENCHIDAS NA LEGENDA
 
@@ -208,7 +215,7 @@ Informações importantes e complementares:
 A FIGURA 3 demonstra o preenchimento correto com a fonte reduzida para a área e a instrução do campo onde deve ser alterado o tamanho da fonte no Autocad.
 
 **FIGURA 3** – EXEMPLO DE LEGENDA – FONTE <br>
-![Figura 3 - Furnas.](/img/furnas_figura3.jpg)
+![Figura 3 - Furnas.](../img/furnas_figura3.jpg)
 
 #### REVISÃO DE DOCUMENTOS
 
@@ -221,14 +228,14 @@ A revisão 0, e suas devidas informações, deve ser mantida fixa para as demais
 A descrição de todas as revisões deve ser preenchida no ÍNDICE DE REVISÕES (campo 13 da TABELA 4), quando o mesmo existir no formato do documento.
 
 **FIGURA 4** – QUADRO DE CONTROLE DE REVISÃO <br>
-![Figura 4 - Furnas.](/img/furnas_figura4.jpg)
+![Figura 4 - Furnas.](../img/furnas_figura4.jpg)
 
 #### FINALIDADE DE EMISSÃO
 
 A finalidade do documento deve refletir a ação que se espera do documento e deve ser assinalada com um X no carimbo conforme ilustrado na FIGURA 5.
 
 **FIGURA 5** – CARIMBO DE FINALIDADE <br>
-![Figura 5 - Furnas.](/img/furnas_figura5.jpg)
+![Figura 5 - Furnas.](../img/furnas_figura5.jpg)
 
 No caso de cancelamento de documentos, o projetista deverá emitir uma nova revisão do documento, assinalando no carimbo a finalidade de emissão “CANCELADO” e informando se houve ou não substituição por outro documento.
 
@@ -260,7 +267,7 @@ O acesso ao sistema deve ser feito pelo endereço [https://flow.furnas.com.br](h
 Para algumas funcionalidades, como importação em lote, sugerimos o uso do navegador Chrome.
 
 **FIGURA 6** – LOGIN NO GREENDOCS <br>
-![Figura 6 - Furnas.](/img/furnas_figura6.jpg)
+![Figura 6 - Furnas.](../img/furnas_figura6.jpg)
 
 ### IMPORTAÇÃO DA LD
 
@@ -270,18 +277,18 @@ Para importar a LD no GreenDocs, deve-se seguir os passos indicados abaixo:
     Sequencia: ADICIONAR – Lista de Documentos
 
     **FIGURA 7** – ADICIONAR LD <br>
-    ![Figura 7 - Furnas.](/img/furnas_figura7.jpg)
+    ![Figura 7 - Furnas.](../img/furnas_figura7.jpg)
 
 2. Identificar o fornecedor da LD e clicar em “Concluir”. <br>
     Sequencia: Fornecedor - Concluir
     
-    ![Figura 7b - Furnas.](/img/furnas_figura7b.jpg)
+    ![Figura 7b - Furnas.](../img/furnas_figura7b.jpg)
 
 3. Fazer upload do arquivo da LD e emitir. <br>
     Sequencia: Upload – Adicionar arquivo(s) – Concluir – Emitir.
 
     **FIGURA 8** – UPLOAD DA LD <br>
-    ![Figura 8 - Furnas.](/img/furnas_figura8.jpg)
+    ![Figura 8 - Furnas.](../img/furnas_figura8.jpg)
 
 Após concluir e emitir a LD via sistema, é gerada automaticamente a numeração do documento.
 
