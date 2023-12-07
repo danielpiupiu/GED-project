@@ -16,12 +16,12 @@ Este manual apresenta os requisitos necessários para a entrega de documentos t�
 | GRD | Guia de Remessa de Documentos Técnicos. Arquivo Excel preenchido pelo projetista com informações referentes aos documentos de sua responsabilidade. Através deste arquivo que o GreenDocs permite o upload dos documentos |
 | Greendocs | Software de gestão eletrônica de documentos utilizado por Furnas. |
 | KOM | Kick Off Meeting – Reunião Inicial do Projeto |
-| LD/Peder | Lista de Documentos. Arquivo Excel preenchido pelo fornecedor para reserva de numeração no GreenDocs. |
+| LD | Lista de Documentos. Arquivo Excel preenchido pelo fornecedor para reserva de numeração no GreenDocs. |
 
 ## DOCUMENTOS DE REFERÊNCIA
 | Número do documento | Título |
 |:-----:|:------|
-| PEDER | LD / Peder |
+| LD | LD |
 | NOE-01 | Norma Identificação Operacional de Equipamentos do Sistema Eletroenergético |
 | GRD | Guia de Remessa de Documentos Técnicos |
 | | Formatos e Desenhos Padrões |
