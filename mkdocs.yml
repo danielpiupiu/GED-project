@@ -1,9 +1,15 @@
 site_name: GED Eletrobras
 site_url: https://não_esqueca_de_alterar_a_url.com/
 nav:
-  - Home: index.md
-  - Taxonomia: taxonomia.md
-  - Reduso de uso do markdown: resumo_md.md
+  - Home: 'index.md'
+  - 'Especificações Resumidas':
+    - 'Chesf': 'resumos/chesf.md'
+    - 'Eletronorte': 'resumos/eletronorte.md'
+    - 'Eletrosul': 'resumos/eletrosul.md'
+    - 'Furnas': 'resumos/furnas.md'
+  - 'Taxonomia': 'taxonomia.md'
+  - 'Instruções':
+    - 'Uso do markdown': 'resumo_md.md'
 repo_url: https://github.com/danielpiupiu/GED-project
 theme:
   name: material
