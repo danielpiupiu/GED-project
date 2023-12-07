@@ -3,19 +3,26 @@
 ### Título 3
 #### E assim por diante...
 
-[comment]: <> (Isto é um comentário e não aparece para o usuário)
-
 1. Lista numerada;
 2. Segundo elemento da lista;
 3. Terceiro elemento;
 4. E assim por diante...
-
-
-
-    - Lista comum;
-    - Segundo elemento da lista;
-    - Terceiro elemento;
-    - E assim por diante...
+      1. Lista numerada;
+      2. Segundo elemento da lista;
+      3. Terceiro elemento;
+      4. E assim por diante...
+         1. Lista numerada;
+         2. Segundo elemento da lista;
+         3. Terceiro elemento;
+         4. E assim por diante...
+      5. Lista numerada;
+      6. Segundo elemento da lista;
+      7. Terceiro elemento;
+      8. E assim por diante...
+5. Lista numerada;
+6. Segundo elemento da lista;
+7. Terceiro elemento;
+8. E assim por diante...
 
 ``` mermaid
 graph LR

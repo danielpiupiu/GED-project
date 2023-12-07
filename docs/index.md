@@ -1,6 +1,5 @@
 # Bem-vindo à documentação técnica do GED Eletrobras
 
-[comment]: <> (!['brasao_GED.png'](./img/brasao_GED.png))
 <img src="./img/brasao_GED.png" alt="brasao_GED" align="middle" width="200"/>
 
 A documentação ficará disponível neste espaço e sua construção se dará ao longo do tempo
