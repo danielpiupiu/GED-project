@@ -1,8 +1,11 @@
+FURNAS - GERAÇÃO E TRANSMISSÃO
+
 # ORIENTAÇÕES PARA ENTREGA DE DOCUMENTOS TECNICOS DE ENGENHARIA
 
 ## OBJETIVO
 
 Este manual apresenta os requisitos necessários para a entrega de documentos técnicos de engenharia para Furnas e o sistema GreenDocs, pelo qual estes documentos devem ser tramitados, com o objetivo de:
+
 - Proteção contra perda de confidencialidade, uso impróprio ou perda de integridade;
 - Distribuição, acesso, recuperação e uso;
 - Armazenamento e preservação, incluindo preservação da legibilidade;
@@ -11,24 +14,24 @@ Este manual apresenta os requisitos necessários para a entrega de documentos t�
 
 ## TERMOS E DEFINIÇÕES
 
-| Termo | Definição |
-|:-----:|:------|
-| Formato | Documento modelo para desenvolvimento dos documentos do projeto Word, Excel, Cad. |
-| Projetista | Empresa contratada para desenvolver projeto de engenharia, fabricação, construção e/ou montagem. |
-| GRD | Guia de Remessa de Documentos Técnicos. Arquivo Excel preenchido pelo projetista com informações referentes aos documentos de sua responsabilidade. Através deste arquivo que o GreenDocs permite o upload dos documentos |
-| Greendocs | Software de gestão eletrônica de documentos utilizado por Furnas. |
-| KOM | Kick Off Meeting – Reunião Inicial do Projeto |
-| LD/Peder | Lista de Documentos. Arquivo Excel preenchido pelo fornecedor para reserva de numeração no GreenDocs. |
+|   Termo    | Definição                                                                                                                                                                                                                 |
+| :--------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|  Formato   | Documento modelo para desenvolvimento dos documentos do projeto Word, Excel, Cad.                                                                                                                                         |
+| Projetista | Empresa contratada para desenvolver projeto de engenharia, fabricação, construção e/ou montagem.                                                                                                                          |
+|    GRD     | Guia de Remessa de Documentos Técnicos. Arquivo Excel preenchido pelo projetista com informações referentes aos documentos de sua responsabilidade. Através deste arquivo que o GreenDocs permite o upload dos documentos |
+| Greendocs  | Software de gestão eletrônica de documentos utilizado por Furnas.                                                                                                                                                         |
+|    KOM     | Kick Off Meeting – Reunião Inicial do Projeto                                                                                                                                                                             |
+|  LD/Peder  | Lista de Documentos. Arquivo Excel preenchido pelo fornecedor para reserva de numeração no GreenDocs.                                                                                                                     |
 
 ## DOCUMENTOS DE REFERÊNCIA
 
-| Número do documento | Título |
-|:-----:|:------|
-| PEDER | LD / Peder |
-| NOE-01 | Norma Identificação Operacional de Equipamentos do Sistema Eletroenergético |
-| GRD | Guia de Remessa de Documentos Técnicos |
-| | Formatos e Desenhos Padrões |
-| | Procedimento para Execução de Desenho em AutoCad. |
+| Número do documento | Título                                                                      |
+| :-----------------: | :-------------------------------------------------------------------------- |
+|        PEDER        | LD / Peder                                                                  |
+|       NOE-01        | Norma Identificação Operacional de Equipamentos do Sistema Eletroenergético |
+|         GRD         | Guia de Remessa de Documentos Técnicos                                      |
+|                     | Formatos e Desenhos Padrões                                                 |
+|                     | Procedimento para Execução de Desenho em AutoCad.                           |
 
 ## DOCUMENTOS DE PROJETO DE ENGENHARIA
 
@@ -64,14 +67,8 @@ Os documentos técnicos de projeto de engenharia devem ser gerados com base nos 
 
 O Número do Documento é gerado pelo GreenDocs, com base nas informações da PEDER entregue pelo projetista, e segue a regra:
 
-> **`UUU - AAAAAAAA - TT - DDD - SSSS`**
-```
-UUU - Unidade de Furnas
-      AAAAAAAA - Identificação da área
-                 TT - Tipo de documento
-                      DDD - Disciplina
-                            SSSS - Número Sequencial
-```
+![Figura 0 - Furnas.](../img/furnas_figura0.jpg)
+
 `Exemplo: GER-UHMSO-DE-PEC-0001`
 ```
 Esta numeração indica que este é o primeiro desenho
@@ -86,57 +83,57 @@ Manso da unidade de Geração.
 
 **TABELA 1** – COMPOSIÇÃO DA NUMERAÇÃO - EXEMPLO
 
-| ITEM | SIGNIFICADO | DESCRIÇÃO | REFERÊNCIA |
-|:-----:|:-----:|:-----:|:------|
-| GER | Unidade | Geração | Conforme TABELA 2 |
-| UHMSO | Identificação da área | Usina Hidrelétrica de Manso | NOE-01 |
-| PEC | Disciplina | Proteção e controle | Conforme TABELA 3 |
-| DE | Tipo de documento | Desenho | Conforme TABELA 4 |
-| 0001 | Sequencial | 0001 | Automático do sistema |
+| ITEM  |      SIGNIFICADO      |          DESCRIÇÃO          | REFERÊNCIA            |
+| :---: | :-------------------: | :-------------------------: | :-------------------- |
+|  GER  |        Unidade        |           Geração           | Conforme TABELA 2     |
+| UHMSO | Identificação da área | Usina Hidrelétrica de Manso | NOE-01                |
+|  PEC  |      Disciplina       |     Proteção e controle     | Conforme TABELA 3     |
+|  DE   |   Tipo de documento   |           Desenho           | Conforme TABELA 4     |
+| 0001  |      Sequencial       |            0001             | Automático do sistema |
 
 **TABELA 2** – UNIDADE DE FURNAS
 
-| SIGLA | UNIDADE | DESCRIÇÃO |
-|:-----:|:-----:|:------|
-| GRL | Geral | Aplica-se a documentos que estão relacionados a todas as áreas de Furnas |
-| GER | Geração de energia | Aplica-se a documentos destinados a área de geração de energia |
-| TRA | Transmissão | Aplica-se a documentos destinados a área de transmissão de energia |
-| MEI | Meio Ambiente | Aplica-se a documentos destinados a área de Meio Ambiente |
-| SEG | Segurança de Barragem | Aplica-se a documentos destinados a área de Segurança de Barragem |
+| SIGLA |        UNIDADE        | DESCRIÇÃO                                                                |
+| :---: | :-------------------: | :----------------------------------------------------------------------- |
+|  GRL  |         Geral         | Aplica-se a documentos que estão relacionados a todas as áreas de Furnas |
+|  GER  |  Geração de energia   | Aplica-se a documentos destinados a área de geração de energia           |
+|  TRA  |      Transmissão      | Aplica-se a documentos destinados a área de transmissão de energia       |
+|  MEI  |     Meio Ambiente     | Aplica-se a documentos destinados a área de Meio Ambiente                |
+|  SEG  | Segurança de Barragem | Aplica-se a documentos destinados a área de Segurança de Barragem        |
 
 **TABELA 3** – DISCIPLINAS
 
-| SIGLA | DISCIPLINA | EXEMPLOS |
-|:-----:|:-----:|:------|
-| PEC | Proteção, Automação e Controle | Diagrama de Arquitetura do Sistema de Comunicação , Diagramas Construtivos Diagramas de Fiação, Diagramas de Interligação, Diagramas Funcionais, Diagramas Lógico, Lista de cabos , Lista de Materiais, Lista de mensagens GOOSE, Lista de pontos de supervisão, Lista de Sobressalentes e ferramentas especiais, Manual, Memorial de Ajustes do Sistema de Proteção, Plano de Inspeção e Teste de cabos, Plano de Inspeção e Teste de painéis, Plano de Treinamento, Plano para teste de aceitação em campo, Plano para teste de aceitação em fábrica, Relatórios de testes, Tabelas de fiação, Tabelas de interligação, Telas IHM, Definição Final de Fornecimento (DFF). |
-| CIV | Civil | Plano de Carga, Layout de Civil, Plano de Demolição, Planta de Fundação e Principais Formas, Planta de Drenagem, Padrões de Arquitetura, Planta Subterrânea. Desenhos, Plataformas, Listas e Memoriais de Estruturas Metálicas, Sondagens Geotécnicas, Estudo preliminar de arquitetura, Projeto Estrutural, Paisagismo, Sistema de Tratamento de Esgoto Sanitário, Sistema de Abastecimento e Tratamento de Água, Drenagem Oleosa, Levantamento Planialtimétrico (Topografia), Estruturas de Barramentos e Equipamentos, Locação de Bases, Canaletas e Edificações, Detalhes de Canaletas, Fundações, Urbanização, Estruturas de Concreto Armado, Projetos Arquitetônicos e Civis das Edificações, Estruturas Metálicas, Terraplenagem, Drenagem Pluvial. |
-| ELE | Elétrica | Lista de Cargas Elétricas, Diagrama Básico de Linha Única e Distribuição de Cargas com base no Processo, Localização e Características da Infraestrutura Elétrica, Sistema Eletrônico de Potência, Conversores Elétricos e Inversores de Frequência Carregadores de Baterias e UPS, Aterramento. |
-| EMC | Eletromecânica | Diagrama Unifiliar Simplificado (Geral, Setorial, Serv. Auxiliares); Arranjo Físico (Localização, Plantas e Cortes - Geral, Setorial); Iluminação e Tomadas - Listas, Memorial de cálculo, plantas, cortes e detalhes; Dutos e Canaletas - Listas, Memorial de cálculo, plantas, cortes e detalhes; Rede de Terra - Listas, Memorial de cálculo, plantas, cortes e detalhes; Equipamentos Elétricos - Detalhes de Instalação em Geral; Área Terciária - Planta, cortes, Listas e Memorial de Cálculo; SPDA (Sistema de Proteção de Descarga Atmosférica) - Listas, Memorial de cálculo, plantas, cortes e detalhes; Sistema de Proteção Contra Incêndio; Barramentos - Memória de cálculo, planta de flechas /tensões /esforços /esticamento, listas; Casa de Comando/Relés - Disposição de equipamentos, dutos, canaletas e eletrodutos, iluminação, rede de terra, listas; Casa do GMG - Disposição de equipamentos, dutos, canaletas e eletrodutos, iluminação, rede de terra, listas; Projeto do sistema solar fotovoltaico. |
-| EQP | Equipamentos | Equipamentos de Carga e Descarga (Guindastes), de Pesagem e Dosagem (balanças), Geradores, motores elétricos, Separadores Mecânicos, Centrífugas, Secadores Centrífugos e Rotativos, Evaporadores Centrífugos, filtros, Equipamentos de Granulação, Equipamentos de Aglomeração, Motoredutor, Transformadores, Reatores, Lista de Bomba e Equipamento, Transformador de corrente, Transformador de Potencial, Transformador de Força, Disjuntor, Secionadores, Para-Raios, Reator, Módulo Híbrido Banco de Capacitor, Transformador de Potência. |
-| COO | Coordenação | Critérios de projeto, manuais, data book, Plano de Pintura, Plano de Soldagem, Plano de Qualidade, Inspeção (de Recebimento, de Testes, de Operação e de Manutenção entre outros. |
-| MEC | Mecânica | Folha de Dados da Bomba, Folha de Dados de Tanque, Modelo 3D, Normas e Código aplicados ao EPC, Desenho de Instalação, Isométrico, Lista de Materiais de Tubulação, Planta e Cortes de Tubulação, Lista de Interligações e Tie-Ins, Lista de Suportes, Relatório de Flexibilidade, entre outros. |
-| TEL | Telecomunicações | Aterramento de telecomunicações, Bobina de Bloqueio, CFTV, Diagrama de interligação Disposição de equipamentos, Estudo de viabilidade, Lista de cabos, Lista de Materiais, Manual, Memória de cálculo – dimensionamento de enlace óptico, Memória de cálculo – dimensionamento do sistema de energia, Percurso de cabos coaxiais, Percurso de cabos ópticos, Plano de emendas, Plano de face, Plano de treinamento, Projeto Construtivo, Projeto Funcional, Protocolo de Inspeção e testes Campo, Protocolo de Inspeção e testes Fábrica, Rádio, Rede Corporativa, Rede Estruturada, Rede Operativa, Sistema de alimentação 48Vcc, Sistema de aterramento de telecomunicações, Tabela de Crimpagem, Telefonia, Teleproteção, WLAN, Workstatement – sistema de telecomunicações. |
+| SIGLA |           DISCIPLINA           | EXEMPLOS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| :---: | :----------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  PEC  | Proteção, Automação e Controle | Diagrama de Arquitetura do Sistema de Comunicação , Diagramas Construtivos Diagramas de Fiação, Diagramas de Interligação, Diagramas Funcionais, Diagramas Lógico, Lista de cabos , Lista de Materiais, Lista de mensagens GOOSE, Lista de pontos de supervisão, Lista de Sobressalentes e ferramentas especiais, Manual, Memorial de Ajustes do Sistema de Proteção, Plano de Inspeção e Teste de cabos, Plano de Inspeção e Teste de painéis, Plano de Treinamento, Plano para teste de aceitação em campo, Plano para teste de aceitação em fábrica, Relatórios de testes, Tabelas de fiação, Tabelas de interligação, Telas IHM, Definição Final de Fornecimento (DFF).                                                                                                                                                                                                                                                                                                                                                      |
+|  CIV  |             Civil              | Plano de Carga, Layout de Civil, Plano de Demolição, Planta de Fundação e Principais Formas, Planta de Drenagem, Padrões de Arquitetura, Planta Subterrânea. Desenhos, Plataformas, Listas e Memoriais de Estruturas Metálicas, Sondagens Geotécnicas, Estudo preliminar de arquitetura, Projeto Estrutural, Paisagismo, Sistema de Tratamento de Esgoto Sanitário, Sistema de Abastecimento e Tratamento de Água, Drenagem Oleosa, Levantamento Planialtimétrico (Topografia), Estruturas de Barramentos e Equipamentos, Locação de Bases, Canaletas e Edificações, Detalhes de Canaletas, Fundações, Urbanização, Estruturas de Concreto Armado, Projetos Arquitetônicos e Civis das Edificações, Estruturas Metálicas, Terraplenagem, Drenagem Pluvial.                                                                                                                                                                                                                                                                       |
+|  ELE  |            Elétrica            | Lista de Cargas Elétricas, Diagrama Básico de Linha Única e Distribuição de Cargas com base no Processo, Localização e Características da Infraestrutura Elétrica, Sistema Eletrônico de Potência, Conversores Elétricos e Inversores de Frequência Carregadores de Baterias e UPS, Aterramento.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|  EMC  |         Eletromecânica         | Diagrama Unifiliar Simplificado (Geral, Setorial, Serv. Auxiliares); Arranjo Físico (Localização, Plantas e Cortes - Geral, Setorial); Iluminação e Tomadas - Listas, Memorial de cálculo, plantas, cortes e detalhes; Dutos e Canaletas - Listas, Memorial de cálculo, plantas, cortes e detalhes; Rede de Terra - Listas, Memorial de cálculo, plantas, cortes e detalhes; Equipamentos Elétricos - Detalhes de Instalação em Geral; Área Terciária - Planta, cortes, Listas e Memorial de Cálculo; SPDA (Sistema de Proteção de Descarga Atmosférica) - Listas, Memorial de cálculo, plantas, cortes e detalhes; Sistema de Proteção Contra Incêndio; Barramentos - Memória de cálculo, planta de flechas /tensões /esforços /esticamento, listas; Casa de Comando/Relés - Disposição de equipamentos, dutos, canaletas e eletrodutos, iluminação, rede de terra, listas; Casa do GMG - Disposição de equipamentos, dutos, canaletas e eletrodutos, iluminação, rede de terra, listas; Projeto do sistema solar fotovoltaico. |
+|  EQP  |          Equipamentos          | Equipamentos de Carga e Descarga (Guindastes), de Pesagem e Dosagem (balanças), Geradores, motores elétricos, Separadores Mecânicos, Centrífugas, Secadores Centrífugos e Rotativos, Evaporadores Centrífugos, filtros, Equipamentos de Granulação, Equipamentos de Aglomeração, Motoredutor, Transformadores, Reatores, Lista de Bomba e Equipamento, Transformador de corrente, Transformador de Potencial, Transformador de Força, Disjuntor, Secionadores, Para-Raios, Reator, Módulo Híbrido Banco de Capacitor, Transformador de Potência.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|  COO  |          Coordenação           | Critérios de projeto, manuais, data book, Plano de Pintura, Plano de Soldagem, Plano de Qualidade, Inspeção (de Recebimento, de Testes, de Operação e de Manutenção entre outros.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|  MEC  |            Mecânica            | Folha de Dados da Bomba, Folha de Dados de Tanque, Modelo 3D, Normas e Código aplicados ao EPC, Desenho de Instalação, Isométrico, Lista de Materiais de Tubulação, Planta e Cortes de Tubulação, Lista de Interligações e Tie-Ins, Lista de Suportes, Relatório de Flexibilidade, entre outros.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|  TEL  |        Telecomunicações        | Aterramento de telecomunicações, Bobina de Bloqueio, CFTV, Diagrama de interligação Disposição de equipamentos, Estudo de viabilidade, Lista de cabos, Lista de Materiais, Manual, Memória de cálculo – dimensionamento de enlace óptico, Memória de cálculo – dimensionamento do sistema de energia, Percurso de cabos coaxiais, Percurso de cabos ópticos, Plano de emendas, Plano de face, Plano de treinamento, Projeto Construtivo, Projeto Funcional, Protocolo de Inspeção e testes Campo, Protocolo de Inspeção e testes Fábrica, Rádio, Rede Corporativa, Rede Estruturada, Rede Operativa, Sistema de alimentação 48Vcc, Sistema de aterramento de telecomunicações, Tabela de Crimpagem, Telefonia, Teleproteção, WLAN, Workstatement – sistema de telecomunicações.                                                                                                                                                                                                                                                  |
 
 **TABELA 4** – TIPOS DOCUMENTAIS
 
-| SIGLA | TIPO DOCUMENTAL | DESCRIÇÃO DE UTILIZAÇÃO E EXEMPLOS |
-|:-----:|:-----:|:------|
-| 3D | Modelo 3D | Modelo 3D (tridimensional) de uma instalação de produção ou parte dela. |
-| CE | Certificado | Certificados de inspeção, de conclusão de montagem, de aferição de instrumentos, de auditoria, entre outros. |
-| DB | Data Book | Conjunto de documentos referentes a um equipamento ou instalação, que pode ser composto por: certificado, desenho, memorial descritivo, lista, relatório e outros. |
-| DE | Desenho | Plantas, layout, croqui, diagrama, fluxograma, anteprojeto e símbolos. |
-| ES | Estudo | Parecer envolvendo aspectos de engenharia emitidos para fins legais do tipo: processo formal de partilha, de perícia ou avaliação, perícia ambiental e assemelhada. Documento serve de subsídio para um parecer técnico. |
-| ET | Especificação técnica | Critérios de projeto, especificação de materiais, sistemas e equipamentos, especificação de processo ou instalações.
-| FD | Folha de dados | De equipamento, de sistemas, de material a granel (válvulas, conexões), de processo, de instrumento, de tubulação (lista de linhas). |
-| LD | Lista de documentos | Sem comentários (autoexplicativo). |
-| LI | Lista | Relação de equipamentos, de instrumentos, de materiais, de suportes, de cabos (não se aplica a lista de linhas, que utiliza o código FD). |
-| LM | Lista de Material | Sem comentários (autoexplicativo). |
-| MA | Manual | De operação, de manutenção, de equipamento, de instrumentação, da embarcação, da garantia da qualidade, e outros. |
-| MC | Memória de Cálculo | Sem comentários (autoexplicativo). |
-| MD | Memorial Descritivo | Documento que descreve um conjunto de atividades, procedimentos, serviços ou processos e outros. |
-| IT |  Instrução | Documento que descreve procedimento de obra referente a Construção e Montagem, Serviços, QSMS e outros. |
-| PT | Parecer Técnico | Parecer para aquisição de sistemas, equipamentos e materiais. |
-| RL | Relatório | De resultados, de estudo técnico, de levantamento de campo, proposta técnica.
+| SIGLA |    TIPO DOCUMENTAL    | DESCRIÇÃO DE UTILIZAÇÃO E EXEMPLOS                                                                                                                                                                                       |
+| :---: | :-------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  3D   |       Modelo 3D       | Modelo 3D (tridimensional) de uma instalação de produção ou parte dela.                                                                                                                                                  |
+|  CE   |      Certificado      | Certificados de inspeção, de conclusão de montagem, de aferição de instrumentos, de auditoria, entre outros.                                                                                                             |
+|  DB   |       Data Book       | Conjunto de documentos referentes a um equipamento ou instalação, que pode ser composto por: certificado, desenho, memorial descritivo, lista, relatório e outros.                                                       |
+|  DE   |        Desenho        | Plantas, layout, croqui, diagrama, fluxograma, anteprojeto e símbolos.                                                                                                                                                   |
+|  ES   |        Estudo         | Parecer envolvendo aspectos de engenharia emitidos para fins legais do tipo: processo formal de partilha, de perícia ou avaliação, perícia ambiental e assemelhada. Documento serve de subsídio para um parecer técnico. |
+|  ET   | Especificação técnica | Critérios de projeto, especificação de materiais, sistemas e equipamentos, especificação de processo ou instalações.                                                                                                     |
+|  FD   |    Folha de dados     | De equipamento, de sistemas, de material a granel (válvulas, conexões), de processo, de instrumento, de tubulação (lista de linhas).                                                                                     |
+|  LD   |  Lista de documentos  | Sem comentários (autoexplicativo).                                                                                                                                                                                       |
+|  LI   |         Lista         | Relação de equipamentos, de instrumentos, de materiais, de suportes, de cabos (não se aplica a lista de linhas, que utiliza o código FD).                                                                                |
+|  LM   |   Lista de Material   | Sem comentários (autoexplicativo).                                                                                                                                                                                       |
+|  MA   |        Manual         | De operação, de manutenção, de equipamento, de instrumentação, da embarcação, da garantia da qualidade, e outros.                                                                                                        |
+|  MC   |  Memória de Cálculo   | Sem comentários (autoexplicativo).                                                                                                                                                                                       |
+|  MD   |  Memorial Descritivo  | Documento que descreve um conjunto de atividades, procedimentos, serviços ou processos e outros.                                                                                                                         |
+|  IT   |       Instrução       | Documento que descreve procedimento de obra referente a Construção e Montagem, Serviços, QSMS e outros.                                                                                                                  |
+|  PT   |    Parecer Técnico    | Parecer para aquisição de sistemas, equipamentos e materiais.                                                                                                                                                            |
+|  RL   |       Relatório       | De resultados, de estudo técnico, de levantamento de campo, proposta técnica.                                                                                                                                            |
 
 #### RESERVA DA NUMERAÇÃO DO DOCUMENTO
 
@@ -186,25 +183,25 @@ O projetista é responsável por garantir o correto preenchimento dos documentos
 
 **TABELA 5** – INFORMAÇÕES QUE DEVEM SER PREENCHIDAS NA LEGENDA
 
-| CAMPO | PREENCHIMENTO |
-|:------|:------|
-| 1 - Tipo Documental | Preencher conforme tipo documental da TABELA 4. |
-| 2 - Nº Documento | Número fornecido pelo GreenDocs, com base nas informações inseridas pelo projetista. |
-| 3 - Nº Empreendimento | Número do PEP do empreendimento |
-| 4 - Revisão | Número da revisão |
-| 5 - Folha | Páginas do documento. Atualizar manualmente a quantidade total de páginas. |
-| 6 - Unidade | Preencher conforme TABELA 2. |
-| 7 - Local | Preencher conforme Norma NOE-01 |
-| 8 - Cod.de instalação | Código de origem do SAP |
-| 9 - TAG | Preencher com informações de identificação dos equipamentos, instrumentos, linhas e voltagem |
-| 10 - Título | Preencher conforme sugestão do ANEXO II – LISTA DE SUGESTÃO DE TÍTULOS POR DISCIPLINA. |
-| 11 - Subtítulo | Preencher com informações complementares ao campo 10 - TÍTULO. |
-| 12 - Logo | Inserir a logo do projetista responsável pela elaboração do documento/ desenho. |
-| 13 - Nº Fornecedor | Número do documento no projetista, se não especificado preencher com N/A. |
-| 14 - Revisão | Número da revisão do número do projetista. Esse campo deve ser preenchido somente se o campo 10 estiver preenchido, caso contrário preencher com “–”. |
+| CAMPO                     | PREENCHIMENTO                                                                                                                                                      |
+| :------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1 - Tipo Documental       | Preencher conforme tipo documental da TABELA 4.                                                                                                                    |
+| 2 - Nº Documento          | Número fornecido pelo GreenDocs, com base nas informações inseridas pelo projetista.                                                                               |
+| 3 - Nº Empreendimento     | Número do PEP do empreendimento                                                                                                                                    |
+| 4 - Revisão               | Número da revisão                                                                                                                                                  |
+| 5 - Folha                 | Páginas do documento. Atualizar manualmente a quantidade total de páginas.                                                                                         |
+| 6 - Unidade               | Preencher conforme TABELA 2.                                                                                                                                       |
+| 7 - Local                 | Preencher conforme Norma NOE-01                                                                                                                                    |
+| 8 - Cod.de instalação     | Código de origem do SAP                                                                                                                                            |
+| 9 - TAG                   | Preencher com informações de identificação dos equipamentos, instrumentos, linhas e voltagem                                                                       |
+| 10 - Título               | Preencher conforme sugestão do ANEXO II – LISTA DE SUGESTÃO DE TÍTULOS POR DISCIPLINA.                                                                             |
+| 11 - Subtítulo            | Preencher com informações complementares ao campo 10 - TÍTULO.                                                                                                     |
+| 12 - Logo                 | Inserir a logo do projetista responsável pela elaboração do documento/ desenho.                                                                                    |
+| 13 - Nº Fornecedor        | Número do documento no projetista, se não especificado preencher com N/A.                                                                                          |
+| 14 - Revisão              | Número da revisão do número do projetista. Esse campo deve ser preenchido somente se o campo 10 estiver preenchido, caso contrário preencher com “–”.              |
 | 15 - Descrição da revisão | Número da revisão conforme o campo 4 - REVISÃO, mantendo histórico das revisões do documento, e a explicação detalhada do que foi alterado na revisão especificada |
-| 16 - Tabela de Finalidade | Sinalizar com um X qual a finalidade do documento |
-| 17 - Controle de revisão | |
+| 16 - Tabela de Finalidade | Sinalizar com um X qual a finalidade do documento                                                                                                                  |
+| 17 - Controle de revisão  |                                                                                                                                                                    |
 
 Informações importantes e complementares:
 
@@ -295,3 +292,54 @@ Após concluir e emitir a LD via sistema, é gerada automaticamente a numeraçã
 A devolução da LD será feita pelo sistema através de uma notificação no e-mail cadastrado. O fornecedor deve exportar via GreenDocs a LD atualizada para verificar os números que deverá utilizar em cada documento.
 
 Para incluir nova revisão da lista, entrar no cadastro da mesma, e utilizar o botão solicitar sequenciais, conforme FIGURA 9 abaixo:
+
+**FIGURA 9** – REVISÃO DA LISTA <br>
+![Figura 9 - Furnas.](../img/furnas_figura9.jpg)
+
+### EMISSÃO DOS DOCUMENTOS
+
+Para emitir os documentos via GreenDocs, o fornecedor deve preencher a GRD de acordo com os dados recebidos na LD/PEDER. Os documentos que não forem emitidos ficarão com sua reserva de numeração em “Aguardando Emissão” até que seja realizada a continuidade do seu cadastro.
+
+Se a GRD estiver devidamente preenchida, o sistema libera o upload dos arquivos. Lembrando que a GRD só poderá ser emitida após a exportação da LD/PEDER para reconhecimento do Numeração.
+
+![Exemplo GRD - Furnas.](../img/furnas_grd.jpg)
+
+Para inserir a GRD no GreenDocs, deve-se seguir os passos indicados abaixo:
+
+1. Adicionar a GRD. <br>
+    Sequencia: ADICIONAR – Guia de Remessa
+
+    **FIGURA 10** – ADICIONAR GRD <br>
+    ![Figura 10 - Furnas.](../img/furnas_figura10.jpg)
+
+2. Importar GRD e documentos. <br>
+    Sequencia: Escolher arquivo (GRD) – Adicionar arquivo(s) (Documentos)
+    
+    **FIGURA 11** – IMPORTAR GRD E DOCUMENTOS
+    ![Figura 11 - Furnas.](../img/furnas_figura11.jpg)
+
+3. Confirmar arquivos. <br>
+    Sequência: Verificar que o arquivo GRD e dos documentos estão na tela – Continuar.
+
+    **FIGURA 12** – UPLOAD DA LD <br>
+    ![Figura 12 - Furnas.](../img/furnas_figura12.jpg)
+
+    Em seguida o sistema fará a verificação dos dados preenchidos na GRD e validará com o nome dos arquivos. Se o preenchimento estiver de acordo os documentos serão cadastrados, caso dê algum erro nesta etapa o sistema informará. Só devem ser adicionados no GreenDocs os arquivos citados na GRD.
+
+4. Emitir a GRD. A partir desse momento, os documentos estão emitidos e inicia-se o fluxo de aprovação. <br>
+    Sequencia: Emitir GRD.
+
+    **FIGURA 13** – EMISSÃO DA GRD <br>
+    ![Figura 13 - Furnas.](../img/furnas_figura13.jpg)
+
+### REVISÃO DE DOCUMENTOS
+
+A GRD é utilizada também para realizar a revisão dos documentos, seguindo o mesmo processo de emissão. O sistema não permitirá revisão de documento ainda em fluxo de comentário ou aprovação.
+
+Em caso de dúvidas sobre o sistema GreenDocs e a sistemática de emissão de documentos técnicos de engenharia do entrar em contato pelo e-mail [arqtec@furnas.com.br](mailto:arqtec@furnas.com.br)
+
+## ANEXOS
+
+- [**ANEXO I – PADRÃO DE ENTREGA DOS ARQUIVOS ELETRÔNICOS**](../resumos/furnas_anexos.md#anexo-i-–-padrão-de-entrega-dos-arquivos-eletrônicos)
+- [**ANEXO II – LISTA DE SUGESTÃO DE TÍTULOS POR DISCIPLINA**](../resumos/furnas_anexos.md#anexo-ii-–-lista-de-sugestão-de-títulos-por-disciplina)
+

@@ -28,6 +28,11 @@ A documentação ficará disponível neste espaço e sua construção se dará a
 - [ ] Implantação das novas diretrizes no sistema existente (POC) **`até 01/03/2024`**;
 - [ ] Implantação das novas diretrizes no sistema existente **`até 01/05/2024`**.
 
+## Reuniões pré-definidas
+
+- [ ] 1a reunião parcial (sprint) **`18/12/2023 às 11:00 (30 min.)`**;
+- [ ] Reunião geral **`29/12/2023 às 11:00 (1h)`**;
+
 ## Documentação
 
 - Manual de Taxonomia e metadados;

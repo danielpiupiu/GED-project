@@ -24,6 +24,28 @@
 7. Terceiro elemento;
 8. E assim por diante...
 
+> **`UUU - AAAAAAAA - TT - DDD - SSSS`**
+
+```
+UUU - Unidade de Furnas
+      AAAAAAAA - Identificação da área
+                 TT - Tipo de documento
+                      DDD - Disciplina
+                            SSSS - Número Sequencial
+```
+
+=== "**UUU**"
+    UUU - **Unidade de Furnas**
+=== "**AAAAAAAA**"
+    AAAAAAAA - **Identificação da área**
+=== "**TT**"
+    TT - **Tipo de documento**
+=== "**DDD**"
+    DDD - **Disciplina**
+=== "**SSSS**"
+    SSSS - **Número Sequencial**
+
+
 ``` mermaid
 graph LR
   A[Start] --> B{Error?};
@@ -100,91 +122,41 @@ erDiagram
   CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 ```
 
-<div class="grid cards" markdown>
+=== "Aba 'A'"
 
-- :fontawesome-brands-html5: __HTML__ for content and structure
-- :fontawesome-brands-js: __JavaScript__ for interactivity
-- :fontawesome-brands-css3: __CSS__ for text running out of boxes
-- :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
+    Este assunto diz respeito ao tópico 'A'.
 
-</div>
+=== "Aba 'B'"
 
-<div class="grid cards" markdown>
+    Este assunto diz respeito ao tópico 'B'.
 
--   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
+=== "Aba 'C'"
 
-    ---
+    Este assunto diz respeito ao tópico 'C' e não se repete mais à frente.
 
-    Install [`mkdocs-material`](#) with [`pip`](#) and get up
-    and running in minutes
+<br>
 
-    [:octicons-arrow-right-24: Getting started](#)
+=== "Aba 'A'"
 
--   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
+    Este assunto TAMBÉM diz respeito ao tópico 'A'.
 
-    ---
+=== "Aba 'B'"
 
-    Focus on your content and generate a responsive and searchable static site
-
-    [:octicons-arrow-right-24: Reference](#)
-
--   :material-format-font:{ .lg .middle } __Made to measure__
-
-    ---
-
-    Change the colors, fonts, language, icons, logo and more with a few lines
-
-    [:octicons-arrow-right-24: Customization](#)
-
--   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
-
-    ---
-
-    Material for MkDocs is licensed under MIT and available on [GitHub]
-
-    [:octicons-arrow-right-24: License](#)
-
-</div>
-
-=== "Unordered list"
-
-    * Sed sagittis eleifend rutrum
-    * Donec vitae suscipit est
-    * Nulla tempor lobortis orci
-
-=== "Ordered list"
-
-    1. Sed sagittis eleifend rutrum
-    2. Donec vitae suscipit est
-    3. Nulla tempor lobortis orci
+    Este assunto TAMBÉM diz respeito ao tópico 'B'.
 
 <div class="grid" markdown>
 
-=== "Unordered list"
+=== "Lista desordenada"
 
     * Sed sagittis eleifend rutrum
     * Donec vitae suscipit est
     * Nulla tempor lobortis orci
 
-=== "Ordered list"
+=== "Lista ordenada"
 
     1. Sed sagittis eleifend rutrum
     2. Donec vitae suscipit est
     3. Nulla tempor lobortis orci
-
-``` title="Content tabs"
-=== "Unordered list"
-
-    * Sed sagittis eleifend rutrum
-    * Donec vitae suscipit est
-    * Nulla tempor lobortis orci
-
-=== "Ordered list"
-
-    1. Sed sagittis eleifend rutrum
-    2. Donec vitae suscipit est
-    3. Nulla tempor lobortis orci
-```
 
 </div>
 
@@ -207,5 +179,26 @@ erDiagram
     int main(void) {
       std::cout << "Hello world!" << std::endl;
       return 0;
+    }
+    ```
+
+=== "Python"
+
+    ``` py
+    import pandas as np
+
+    def main():
+      print("Hello world!")
+      return 0
+    ```
+
+=== "JavaScript"
+
+    ``` js
+    let lista = [];
+
+    function main() {
+      alert("Hello world!");
+      return 0
     }
     ```
