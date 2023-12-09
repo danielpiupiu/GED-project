@@ -58,12 +58,14 @@ nav:
     - 'Eletronorte': 'resumos/eletronorte.md'
     - 'Eletrosul': 'resumos/eletrosul.md'
     - 'Furnas': 'resumos/furnas.md'
+    - 'Furnas - anexos': 'resumos/furnas_anexos.md'
+    - 'Furnas - resumido': 'resumos/furnas_resumo.md'
   - 'Taxonomia': 'taxonomia.md'
   - 'Instruções':
     - 'Uso do markdown': 'resumo_md.md'
 plugins:
   - search
-repo_url: https://github.com/danielpiupiu/GED-project
+repo_url: https://github.com/danielpiupiu/GED-project/tree/Desenvolvimento
 site_name: GED Eletrobras
 site_url: https://não_esqueca_de_alterar_a_url.com/
 theme:
