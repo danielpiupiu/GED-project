@@ -32,6 +32,9 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -53,11 +56,15 @@ markdown_extensions:
   - tables
 nav:
   - Home: 'index.md'
-  - 'Especificações Resumidas':
-    - 'Chesf': 'resumos/chesf.md'
-    - 'Eletronorte': 'resumos/eletronorte.md'
-    - 'Eletrosul': 'resumos/eletrosul.md'
-    - 'Furnas': 'resumos/furnas.md'
+  - 'Especificações Legadas':
+    - 'Chesf - geração': 'resumos/chesf_geracao.md'
+    - 'Chesf - transmissão': 'resumos/chesf_transmissao.md'
+    - 'Eletronorte - geração': 'resumos/eletronorte_geracao.md'
+    - 'Eletronorte - transmissão': 'resumos/eletronorte_transmissao.md'
+    - 'Eletronorte - SPCS': 'resumos/eletronorte_spcs.md'
+    - 'Eletrosul - geração': 'resumos/eletrosul_geracao.md'
+    - 'Eletrosul - transmissão': 'resumos/eletrosul_transmissao.md'
+    - 'Furnas - geração e transmissão': 'resumos/furnas.md'
     - 'Furnas - anexos': 'resumos/furnas_anexos.md'
     - 'Furnas - resumido': 'resumos/furnas_resumo.md'
   - 'Taxonomia': 'taxonomia.md'

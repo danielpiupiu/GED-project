@@ -3,6 +3,35 @@
 ### Título 3
 #### E assim por diante...
 
+**Negrito**<br>
+*Itálico*<br>
+==Destacado==<br>
+~~Tachado~~<br>
+>Comentado
+
+``Bloco de texto``
+
+<p align="center">Códigos HTML para estilos avançados:<br>
+  <b>Negrito</b><br>
+  <u>Sublinhado</u><br>
+  <i>Itálico</i><br>
+  <em>Ênfase</em><br>
+  <font color='red'>Fonte colorida nomeada</font><br>
+  <font color=#FF00FF>Fonte colorida #RRGGBB</font><br>
+  <font size=5>Tamanho da fonte de 1 a 7</font><br>
+  <font face='arial'>Fonte arial</font><br>
+  <font face='courier'>Fonte courier</font><br>
+  <font face='verdana'>Fonte verdana</font>
+</p>
+
+>Emojis
+
+:smile:
+
+:sweat_smile:
+
+:arrow_right:
+
 1. Lista numerada;
 2. Segundo elemento da lista;
 3. Terceiro elemento;
