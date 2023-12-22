@@ -1,7 +1,18 @@
+https://www.markdownguide.org/basic-syntax/
+
 # Título 1
 ## Título 2
 ### Título 3
 #### E assim por diante...
+
+$$
+\vec{a} = b + \vec{c}
+$$
+
+\begin{pmatrix}
+   a & b \\
+   c & d
+\end{pmatrix}
 
 **Negrito**<br>
 *Itálico*<br>

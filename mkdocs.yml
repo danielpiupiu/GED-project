@@ -20,14 +20,21 @@ extra:
       name: Eletrobras no Twitter
   version:
       provider: mike
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - javascripts/tablesort.js
+  - javascripts/katex.js 
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
 markdown_extensions:
   - admonition
   - attr_list
   - def_list
   - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.betterem
   - pymdownx.caret
   - pymdownx.critic
@@ -68,6 +75,7 @@ nav:
     - 'Furnas - anexos': 'resumos/furnas_anexos.md'
     - 'Furnas - resumido': 'resumos/furnas_resumo.md'
   - 'Taxonomia': 'taxonomia.md'
+  - 'Mapa de processos': 'mapa_de_processos.md'
   - 'Instruções':
     - 'Uso do markdown': 'resumo_md.md'
 plugins:
