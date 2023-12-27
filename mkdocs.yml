@@ -63,6 +63,7 @@ markdown_extensions:
   - tables
 nav:
   - Home: 'index.md'
+  - 'Taxonomia': 'taxonomia.md'
   - 'Especificações Legadas':
     - 'Chesf - geração': 'resumos/chesf_geracao.md'
     - 'Chesf - transmissão': 'resumos/chesf_transmissao.md'
@@ -74,7 +75,6 @@ nav:
     - 'Furnas - geração e transmissão': 'resumos/furnas.md'
     - 'Furnas - anexos': 'resumos/furnas_anexos.md'
     - 'Furnas - resumido': 'resumos/furnas_resumo.md'
-  - 'Taxonomia': 'taxonomia.md'
   - 'Mapa de processos': 'mapa_de_processos.md'
   - 'Instruções':
     - 'Uso do markdown': 'resumo_md.md'
