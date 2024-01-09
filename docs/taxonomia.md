@@ -9,8 +9,8 @@ ELETROBRAS - GERAÇÃO E TRANSMISSÃO - Taxonomia para documentos de engenharia 
 **CC** – Número do empreendimento<br>
 **DDD** - Identificação do setor da Instalação por tipo de instalação<br>
 **EE** – Finalidade do Projeto<br>
-**FFF** - Identificação da Disciplina<br>
-**GG** - Tipologia do documento<br>
+**FF** - Identificação da Disciplina<br>
+**GGG** - Tipologia do documento<br>
 **HHHH** - Número sequencial<br>
 **III** - Identificação da revisão (automatizado pelo GED)
 
@@ -166,11 +166,11 @@ AABBB, onde AA representa o tipo da instalação (UH Usina Hid., ST sub. trans.,
 |    PE    | Projeto executivo               |
 |    CC    | Como construído                 |
 
-### **Tabela 6**: FFF - Identificação da Disciplina
+### **Tabela 6**: FF - Identificação da Disciplina
 
 **Disciplina geral**: arquitetura (main), civil, eletromecânica, equipamento, rede de dados, telecomunicações, proteção (controle e automação), elétrica, mecânica, meio-ambiente, fundiário, coordenação, gestão, inspeção, etc.
 
-| Campo FFF | Descrição                           |
+| Campo FF | Descrição                           |
 | :-------: | :---------------------------------- |
 |    ARQ    | Arquitetura, Urbanismo e Paisagismo |
 |    CIV    | Civil                               |
@@ -189,11 +189,11 @@ AABBB, onde AA representa o tipo da instalação (UH Usina Hid., ST sub. trans.,
 
 > __*__ Em Caso de Disciplina ‘Geral’ localizar o sistema mais próximo na tabela 8.
 
-### **Tabela 7**: GG - Tipologia do documento
+### **Tabela 7**: GGG - Tipologia do documento
 
 **Tipo do documento**: desenho, arranjo, vista, corte, pradrão, modelo, uniformização, nota técnica, relatório, certificado, ata, R3, R4, etc.
 
-| Campo GG | Descrição                                              |
+| Campo GGG | Descrição                                              |
 | :------: | :----------------------------------------------------- |
 |    AA    | Arquitetura / Topologia de Redes                       |
 |    AC    | Ação Corretiva e Preventiva                            |
