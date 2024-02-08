@@ -2,11 +2,11 @@ ELETROBRAS - GERAÇÃO E TRANSMISSÃO - Taxonomia para documentos de engenharia 
 
 # TAXONOMIA
 
-## **AABBB.CC-DDD-EE-FFF.GG-HH-IIII-JJJ**
+## **AABBB.CC-DDD-EE-FF.GGG-HHHH-III**
 
 **AA** – Tipo da instalação<br>
 **BBB** – Nome da instalação<br>
-**CC** – Número do empreendimento<br>
+**CC** – Número da etapa do empreendimento<br>
 **DDD** - Identificação do setor da Instalação por tipo de instalação<br>
 **EE** – Finalidade do Projeto<br>
 **FF** - Identificação da Disciplina<br>
@@ -85,40 +85,59 @@ AABBB, onde AA representa o tipo da instalação (UH Usina Hid., ST sub. trans.,
 
 **Tipo da instalação**: hidro, termo, eólica, solar, nuclear; subestação, linha, estação repetidora; PCH, subestação, LD, etc
 
-| Campo AA | Descrição                 |
-| :------: | :------------------------ |
-|    GR    | Geral                     |
-|    UH    | Usina hidroelétrica       |
-|    SE    | Subestação de transmissão |
-|    LT    | Linha de transmissão      |
-|    UT    | Usina termoelétrica       |
-|    EO    | Planta eólica             |
-|    PS    | Planta solar              |
-|    NU    | Usina nuclear             |
-|    HI    | Hidrogênio                |
-|   ...    | ...                       |
+| Campo AA | Descrição                            |
+| :------: | :----------------------------------- |
+|    GR    | Geral                                |
+|    UH    | Usina hidroelétrica                  |
+|    SE    | Subestação de transmissão            |
+|    LT    | Linha de transmissão                 |
+|    UT    | Usina termoelétrica                  |
+|    EO    | Parque eólico                        |
+|    PS    | Planta solar                         |
+|    NU    | Usina nuclear                        |
+|    HI    | Hidrogênio                           |
+|    RP    | Estação repetidora/ telecomunicações |
+|   ...    | ...                                  |
 
 ### **Tabela 2**: BBB – Nome da instalação
 
-| Campo BBB | Descrição        |
-| :-------: | :--------------- |
-|    ELB    | Geral Eletrobras |
-|    TUC    | Tucuruí          |
-|    CNU    | Coaracy Nunes    |
-|    FUR    | Furnas           |
-|    IGT    | Igaporã III      |
-|    ...    | ...              |
+| Campo BBB | Descrição            |
+| :-------: | :------------------- |
+|    ELB    | Geral Eletrobras     |
+|    ENG    | Padrão de Engenharia |
+|    TUC    | Tucuruí              |
+|    CNU    | Coaracy Nunes        |
+|    FUR    | Furnas               |
+|    IGT    | Igaporã III          |
+|    ...    | ...                  |
 
-### **Tabela 3**: CC – Número do empreendimento
+### **Tabela 3**: CC – Número da etapa do empreendimento
 
-| Campo CC | Descrição       |
-| :------: | :-------------- |
-|    00    | Como construído |
-| 01 a 99  | Demais etapas   |
+|     Campo CC     | Descrição                        |
+| :--------------: | :------------------------------- |
+|     01 a 99      | Etapas                           |
+| A1 a A9, AA a AZ | Etapas                           |
+|       ...        | ...                              |
+| Z1 a Z9, ZA a ZZ | Etapas                           |
+|        ##        | Valores reservados:              |
+|        00        | Como construído                  |
+|        CH        | Padrão de engenharia Chesf       |
+|        EN        | Padrão de engenharia Eletronorte |
+|        ES        | Padrão de engenharia Eletrosul   |
+|        FU        | Padrão de engenharia Furnas      |
+|        PE        | Padrão de engenharia Geral       |
 
-![Figura 0](img/brainstorm_figura0.jpg)
 
-.CC é o campo para o número do empreendimento; neste, o número 00 é reservado para o conforme construído, definido na tabela de Finalidade do Projeto com o código 'CC', e o número 99 para padrões de engenharia.
+![Figura 0](../img/brainstorm_figura0.jpg)
+
+.CC é o campo para o número do empreendimento; neste, algumas numerações são reservadas, como segue:
+
+- 00 é reservado para o conforme construído;
+- CH é reservado para documentos padrões de engenharia Chesf;
+- EN é reservado para documentos padrões de engenharia Eletronorte;
+- ES é reservado para documentos padrões de engenharia Eletrosul;
+- FU é reservado para documentos padrões de engenharia Furnas;
+- PE é reservado para padrões de engenharia geral.
 
 ``EX: SEIGT.00-SE2-CC-ELM-DE-0001-004``
 
@@ -164,107 +183,114 @@ AABBB, onde AA representa o tipo da instalação (UH Usina Hid., ST sub. trans.,
 |    PB    | Projeto básico                  |
 |    FA    | Projeto de fabricação           |
 |    PE    | Projeto executivo               |
-|    CC    | Como construído                 |
+|    CC    | Conforme construído             |
+|    SB    | Segurança de barragem           |
 
 ### **Tabela 6**: FF - Identificação da Disciplina
 
 **Disciplina geral**: arquitetura (main), civil, eletromecânica, equipamento, rede de dados, telecomunicações, proteção (controle e automação), elétrica, mecânica, meio-ambiente, fundiário, coordenação, gestão, inspeção, etc.
 
 | Campo FF | Descrição                           |
-| :-------: | :---------------------------------- |
-|    ARQ    | Arquitetura, Urbanismo e Paisagismo |
-|    CIV    | Civil                               |
-|    ELM    | Eletromecânica                      |
-|    PCS    | Proteção, Controle e Supervisão     |
-|    SAX    | Serviços Auxiliares                 |
-|    ELE    | Elétrica                            |
-|    EQP    | Equipamentos de Levantamento        |
-|    GRL    | Geral*                              |
-|    MEC    | Mecânica                            |
-|    OEM    | O&M da Usina                        |
-|    PLN    | Planejamento                        |
-|    QUA    | Qualidade                           |
-|    TEC    | Documentação Técnica                |
-|    ...    | ...                                 |
+| :------: | :---------------------------------- |
+|    AQ    | Arquitetura, Urbanismo e Paisagismo |
+|    CV    | Civil                               |
+|    EM    | Eletromecânica                      |
+|    PC    | Proteção, Controle e Supervisão     |
+|    SA    | Serviços Auxiliares                 |
+|    IT    | Iluminação, tomadas e SPDA          |
+|    EQ    | Equipamentos                        |
+|    GR    | Geral*                              |
+|    ME    | Mecânica                            |
+|    QL    | Qualidade                           |
+|    MA    | Meio ambiente                       |
+|    TL    | Telecomunicações                    |
+|    ES    | Estudos e planejamento              |
+|    MT    | Materiais                           |
+|    IN    | Proteção contra incêndio            |
+|   ...    | ...                                 |
 
-> __*__ Em Caso de Disciplina ‘Geral’ localizar o sistema mais próximo na tabela 8.
+> __*__ Em Caso de Disciplina ‘Geral’ localizar o sistema mais próximo na tabela 7.
 
 ### **Tabela 7**: GGG - Tipologia do documento
 
 **Tipo do documento**: desenho, arranjo, vista, corte, pradrão, modelo, uniformização, nota técnica, relatório, certificado, ata, R3, R4, etc.
 
 | Campo GGG | Descrição                                              |
-| :------: | :----------------------------------------------------- |
-|    AA    | Arquitetura / Topologia de Redes                       |
-|    AC    | Ação Corretiva e Preventiva                            |
-|    AQ    | Atestado de Qualidade                                  |
-|    BI    | Boletim de Inspeção                                    |
-|    CA    | Certificado de Materiais                               |
-|    CC    | Certificado de Conclusão de Comissionamento            |
-|    CM    | Certificado de Conclusão de Montagem                   |
-|    CP    | Critério de Projeto                                    |
-|    CQ    | Croquis                                                |
-|    CR    | Cronograma                                             |
-|    CT    | Catálogo                                               |
-|    DB    | Data Book                                              |
-|    DD    | Diagrama Dimensional                                   |
-|    DE    | Desenhos Civil, Elétrico e Mecânico                    |
-|    DF    | Diagrama Funcional                                     |
-|    DI    | Diagrama de Interligação de Equipamentos e Painéis     |
-|    DL    | Diagrama Lógico                                        |
-|    DM    | Detalhes de Montagem de Equipamentos                   |
-|    DO    | Diário de Obra                                         |
-|    DT    | Detalhes Típicos/Padrões                               |
-|    DU    | Diagramas Unifilares e Esquemáticos                    |
-|    ET    | Especificação Técnica                                  |
-|    FD    | Folha de Dados do Equipamento                          |
-|    FI    | Diagrama de Fiação                                     |
-|    FL    | Fluxograma                                             |
-|    FR    | Formulário                                             |
-|    FT    | Diagrama Funcional Integrado                           |
-|    IE    | Instruções Executivas                                  |
-|    IT    | Instruções de Trabalho                                 |
-|    LA    | Lista de Aprovisionamento de Materiais                 |
-|    LC    | Lista de Cabos                                         |
-|    LD    | Lista de Documentos                                    |
-|    LE    | Lista de Estimativas de Materiais                      |
-|    LF    | Lista de Ferro                                         |
-|    LI    | Lista de Instrumentos                                  |
-|    LM    | Lista de Materiais                                     |
-|    LP    | Lista de Pontos / Sinais                               |
-|    LQ    | Lista de Equipamentos                                  |
-|    MC    | Memória de Cálculo                                     |
-|    MD    | Memorial Descritivo                                    |
-|    MM    | Manual de Montagem                                     |
-|    MN    | Manual de Comissionamento                              |
-|    MO    | Manual de Operação e Manutenção                        |
-|    MP    | Modificação de Projeto no Campo                        |
-|    MQ    | Manual de Qualidade                                    |
-|    NC    | Não Conformidades                                      |
-|    OC    | Orçamento                                              |
-|    OR    | Organograma                                            |
-|    PC    | Plano de Comissionamento                               |
-|    PE    | Programa de Ensaios                                    |
-|    PI    | Plano de Inspeção e Controle da Qualidade (PICQ)       |
-|    PL    | Programa de Treinamento                                |
-|    PN    | Procedimento de Inspeção                               |
-|    PQ    | Plano ou Procedimento de Qualidade                     |
-|    PT    | Procedimento de Teste                                  |
-|    RA    | Relatório de Análise de Documentos Recebidos           |
-|    RD    | Relatório de Documentos                                |
-|    RE    | Relatório de Alteração de Especificação Técnica (RAET) |
-|    RF    | Relatório de Inspeção em Fábrica                       |
-|    RI    | Relatório de Inspeção em Campo                         |
-|    RN    | Ata de Reunião                                         |
-|    RP    | Relatório de Progresso                                 |
-|    RQ    | Relatório de Qualidade                                 |
-|    RT    | Relatório Técnico                                      |
-|    RV    | Relatório de Viagem                                    |
-|    SB    | Lista de Sobressalentes                                |
-|    SX    | Sumário Executivo                                      |
-|    TA    | Teste de Aceitação                                     |
-|    TI    | Tabela de Interligação Externa                         |
-|    PB    | Projeto Básico                                         |
+| :-------: | :----------------------------------------------------- |
+|    AA     | Arquitetura / Topologia de Redes                       |
+|    AC     | Ação Corretiva e Preventiva                            |
+|    AQ     | Atestado de Qualidade                                  |
+|    BI     | Boletim de Inspeção                                    |
+|    CA     | Certificado de Materiais                               |
+|    CC     | Certificado de Conclusão de Comissionamento            |
+|    CM     | Certificado de Conclusão de Montagem                   |
+|    CP     | Critério de Projeto                                    |
+|    CQ     | Croquis                                                |
+|    CR     | Cronograma                                             |
+|    CT     | Catálogo                                               |
+|    DB     | Data Book                                              |
+|    DD     | Diagrama Dimensional                                   |
+|    DE     | Desenhos Civil, Elétrico e Mecânico                    |
+|    DF     | Diagrama Funcional                                     |
+|    DI     | Diagrama de Interligação de Equipamentos e Painéis     |
+|    DL     | Diagrama Lógico                                        |
+|    DM     | Detalhes de Montagem de Equipamentos                   |
+|    DO     | Diário de Obra                                         |
+|    DT     | Detalhes Típicos/Padrões                               |
+|    DU     | Diagramas Unifilares e Esquemáticos                    |
+|    ED     | Edital ANEEL                                           |
+|    ET     | Especificação Técnica                                  |
+|    FD     | Folha de Dados do Equipamento                          |
+|    FI     | Diagrama de Fiação                                     |
+|    FL     | Fluxograma                                             |
+|    FR     | Formulário                                             |
+|    FT     | Diagrama Funcional Integrado                           |
+|    IE     | Instruções Executivas                                  |
+|    IF     | Documento informativo                                  |
+|    IT     | Instruções de Trabalho                                 |
+|    LA     | Lista de Aprovisionamento de Materiais                 |
+|    LC     | Lista de Cabos                                         |
+|    LD     | Lista de Documentos                                    |
+|    LE     | Lista de Estimativas de Materiais                      |
+|    LF     | Lista de Ferro                                         |
+|    LI     | Lista de Instrumentos                                  |
+|    LM     | Lista de Materiais                                     |
+|    LP     | Lista de Pontos / Sinais                               |
+|    LQ     | Lista de Equipamentos                                  |
+|    MC     | Memória de Cálculo                                     |
+|    MD     | Memorial Descritivo                                    |
+|    MM     | Manual de Montagem                                     |
+|    MN     | Manual de Comissionamento                              |
+|    MO     | Manual de Operação e Manutenção                        |
+|    MP     | Modificação de Projeto no Campo                        |
+|    MQ     | Manual de Qualidade                                    |
+|    NC     | Não Conformidades                                      |
+|    OC     | Orçamento                                              |
+|    OR     | Organograma                                            |
+|    PC     | Plano de Comissionamento                               |
+|    PE     | Programa de Ensaios                                    |
+|    PI     | Plano de Inspeção e Controle da Qualidade (PICQ)       |
+|    PL     | Programa de Treinamento                                |
+|    PN     | Procedimento de Inspeção                               |
+|    PQ     | Plano ou Procedimento de Qualidade                     |
+|    PT     | Procedimento de Teste                                  |
+|    R3     | Relatório R3                                           |
+|    R4     | Relatório R4                                           |
+|    RA     | Relatório de Análise de Documentos Recebidos           |
+|    RD     | Relatório de Documentos                                |
+|    RE     | Relatório de Alteração de Especificação Técnica (RAET) |
+|    RF     | Relatório de Inspeção em Fábrica                       |
+|    RI     | Relatório de Inspeção em Campo                         |
+|    RN     | Ata de Reunião                                         |
+|    RP     | Relatório de Progresso                                 |
+|    RQ     | Relatório de Qualidade                                 |
+|    RT     | Relatório Técnico                                      |
+|    RV     | Relatório de Viagem                                    |
+|    SB     | Lista de Sobressalentes                                |
+|    SX     | Sumário Executivo                                      |
+|    TA     | Teste de Aceitação                                     |
+|    TI     | Tabela de Interligação Externa                         |
+|    PB     | Projeto Básico                                         |
 
 ### **Campo**: HHHH - Número sequencial de 0001 a 9999.
 
@@ -275,13 +301,18 @@ AABBB, onde AA representa o tipo da instalação (UH Usina Hid., ST sub. trans.,
 |                        000 a 099                        | Revisão numérica - Documentos aprovados        |
 | 00A, 00B, 00C, ...<br> 01A, 01B, ... <br> 02A, 03A, ... | Revisão alfanumérica - Documentos em aprovação |
 
-Justificativa de revisão regressiva no lugar de progressiva e para manter os campo completos na primeira revisão, evitando uma lógica extra apenas para eliminar caracteres.
+As revisões se darão de forma regressiva quando o documento ganha o status de aprovado. Esta forma de numeração visa manter o número de algarismos do campo revisão completo desde a primeira revisão, evitando de outra forma uma lógica extra apenas para eliminar caracteres. Assim, numa numeração regressiva, a ordenação dos documentos seguirá como no exemplo abaixo:
 
-Revisão progressiva - Não<br>
-A - B - 000 - 00A - 00B - 001 - 01A - 01B - 002
-
-Revisão regressiva - Sim<br>
-00A - 00B - 000 - 01A - 01B - 001 - 02A - 02B - 002
+- 00A (elaboração inicial)
+- 00B (primeira revisão)
+- 00C (segunda revisão)
+- 000 (documento aprovado)
+- 01A (nova revisão)
+- 001 (documento aprovado)
+- 02A (nova revisão)
+- 02B (revisão)
+- 002 (documento aprovado)
+- ...
 
 ____________________________________________________________________________
 

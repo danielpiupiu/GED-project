@@ -35,7 +35,9 @@ A documentação ficará disponível neste espaço e sua construção se dará a
 - [X] 2a reunião de acompanhamento (sprint) **`21/12/2023 às 11:00 (30 min.)`**;
 - [X] 3a reunião de acompanhamento (sprint) **`26/12/2023 às 11:00 (30 min.)`**;
 - [X] 4a reunião de acompanhamento (sprint) **`28/12/2023 às 10:00 (30 min.)`**;
-- [ ] Reunião geral **`29/12/2023 às 11:00 (1h)`**;
+- [X] 1a reunião sobre mapas de processos **`16/01/2024`**
+- [X] 2a reunião sobre mapas de processos **`23/01/2024`**
+- [ ] 3a reunião sobre mapas de processos **`09/02/2024`**
 
 ## Documentação
 

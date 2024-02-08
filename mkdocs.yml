@@ -20,6 +20,7 @@ extra:
       name: Eletrobras no Twitter
   version:
       provider: mike
+      default: latest
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
 extra_javascript:
@@ -63,7 +64,17 @@ markdown_extensions:
   - tables
 nav:
   - Home: 'index.md'
-  - 'Taxonomia': 'taxonomia.md'
+  - 'Taxonomia':
+    - 'Visão geral': 'taxonomia/taxonomia_geral.md'
+    - 'AA-Tipo da instalação': 'taxonomia/taxonomia_aa.md'
+    - 'BBB-Nome da instalação': 'taxonomia/taxonomia_bbb.md'
+    - 'CC-Número da etapa do empreendimento': 'taxonomia/taxonomia_cc.md'
+    - 'DDD-Identificação do setor da Instalação por tipo de instalação': 'taxonomia/taxonomia_ddd.md'
+    - 'EE-Finalidade do Projeto': 'taxonomia/taxonomia_ee.md'
+    - 'FF-Identificação da Disciplina': 'taxonomia/taxonomia_ff.md'
+    - 'GGG-Tipologia do documento': 'taxonomia/taxonomia_ggg.md'
+    - 'HHHH-Número sequencial': 'taxonomia/taxonomia_hhhh.md'
+    - 'III-Identificação da revisão': 'taxonomia/taxonomia_iii.md'
   - 'Especificações Legadas':
     - 'Chesf - geração': 'resumos/chesf_geracao.md'
     - 'Chesf - transmissão': 'resumos/chesf_transmissao.md'
@@ -76,6 +87,8 @@ nav:
     - 'Furnas - anexos': 'resumos/furnas_anexos.md'
     - 'Furnas - resumido': 'resumos/furnas_resumo.md'
   - 'Mapa de processos': 'mapa_de_processos.md'
+  - 'Metadados de informação': 'metadados.md'
+  - 'Glossário': 'glossario.md'
   - 'Instruções':
     - 'Uso do markdown': 'resumo_md.md'
 plugins:

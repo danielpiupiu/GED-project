@@ -87,12 +87,75 @@ UUU - Unidade de Furnas
 
 
 ``` mermaid
-graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
+---
+title: Fluxo do repositório
+---
+%%{init: { 'gitGraph': {'showBranches': true, 'showCommitLabel':true,'mainBranchName': 'Consolidado'}} }%%
+      gitGraph TB:
+        commit type:REVERSE tag:"Revisão 004"
+        commit tag:"Revisão 005"
+        branch Etapa_acessante
+        commit tag:"Revisão 00A"
+        commit tag:"Revisão 00B"
+        checkout Consolidado
+        commit tag:"Revisão 006"
+        branch Etapa_03_PB
+        commit tag:"Revisão 00A"
+        checkout Etapa_acessante
+        commit tag:"Revisão 00C"
+        checkout Etapa_03_PB
+        commit tag:"Revisão 00B"
+        commit type:HIGHLIGHT tag:"Revisão 000"
+        branch Etapa_03_PE
+        commit tag:"Revisão 00A"
+        commit type:HIGHLIGHT tag:"Revisão 000"
+        commit tag:"Revisão 01A"
+        commit tag:"Revisão 01B"
+        commit type:HIGHLIGHT tag:"Revisão 001"
+        checkout Consolidado
+        merge Etapa_03_PE tag:"Revisão 007"
+        checkout Etapa_acessante
+        commit type:HIGHLIGHT tag:"Revisão 000"
+        checkout Consolidado
+        merge Etapa_acessante tag:"Revisão 008"
+```
+
+``` mermaid
+---
+title: Fluxo do projeto básico
+---
+flowchart LR
+  INICIO(("Início")):::inicio --> GP0
+  subgraph EEEP
+    direction TB
+    GP0("Solicitar\n contratação\n de consultoria") --> GPE0("Ponto focal")
+    subgraph EEEPE
+        direction LR
+        GPE0 --> 
+        GPE1("Consultoria") --> GPE2("Engenharia do proprietário")
+        GPE2 --> D1{"Aprovado?"}
+        D1 -->|"Sim"| DB{{"teste"}}
+        D1 -->|"Não"| GPE1
+    end
+    subgraph EEEPC
+        direction LR
+        GPC1("Consultoria") --> GPC2("Engenharia do proprietário")
+    end
+    EEEPE -->|"notificação"| EEEPC
+    EEEPC --> EEEPE
+    subgraph EEEPP
+        direction LR
+        GOS1("Consultoria") --> GPS2("Engenharia do proprietário")
+    end
+    EEEPE -->|"notificação"| EEEPP
+    EEEPP --> EEEPE
+  end
+  DB --> FIM((("Fim"))):::fim
+  INICIO -.->|"Solicita Projeto Básico"| DOCUMENTO[["CI EEPMT"]]
+    
+  classDef inicio stroke:#0f0
+  classDef fim stroke:#f00
+  style DOCUMENTO stroke-dasharray: 5 5
 ```
 
 ``` mermaid
