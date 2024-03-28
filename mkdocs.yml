@@ -64,6 +64,7 @@ markdown_extensions:
   - tables
 nav:
   - Home: 'index.md'
+  - 'Roadmap': 'roadmap.md'
   - 'Taxonomia':
     - 'Visão geral': 'taxonomia/taxonomia_geral.md'
     - 'AA-Tipo da instalação': 'taxonomia/taxonomia_aa.md'

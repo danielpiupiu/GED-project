@@ -2,7 +2,7 @@
 
 ## **AA**BBB.CC-DDD-EE-FF.GGG-HHHH-III
 
-Texto descritivo
+O tipo da instalação
 
 ### **Tabela 1**: AA – Tipo da instalação
 
