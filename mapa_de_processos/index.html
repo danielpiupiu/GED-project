@@ -271,6 +271,26 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roadmap
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -281,10 +301,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -295,8 +315,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Taxonomia
           </label>
@@ -535,10 +555,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -549,8 +569,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Especificações Legadas
           </label>
@@ -857,10 +877,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -871,8 +891,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Instruções
           </label>
@@ -942,7 +962,232 @@
 
   <h1>Mapa de processos</h1>
 
+<pre class="mermaid"><code>---
+title: Fluxo do projeto básico
+---
+flowchart LR
+  INICIO(("Início")):::inicio --&gt; GP0
+  subgraph EEEP
+    direction TB
+    GP0("Solicitar\n contratação\n de consultoria") --&gt; GPE0("Ponto focal")
+    subgraph EEEPE
+        direction LR
+        GPE0 --&gt; 
+        GPE1("Consultoria") --&gt; GPE2("Engenharia do proprietário")
+        GPE2 --&gt; D1{"Aprovado?"}
+        D1 --&gt;|"Sim"| DB{{"teste"}}
+        D1 --&gt;|"Não"| GPE1
+    end
+    subgraph EEEPC
+        direction LR
+        GPC1("Consultoria") --&gt; GPC2("Engenharia do proprietário")
+    end
+    EEEPE --&gt;|"notificação"| EEEPC
+    EEEPC --&gt; EEEPE
+    subgraph EEEPP
+        direction LR
+        GOS1("Consultoria") --&gt; GPS2("Engenharia do proprietário")
+    end
+    EEEPE --&gt;|"notificação"| EEEPP
+    EEEPP --&gt; EEEPE
+  end
+  DB --&gt; FIM((("Fim"))):::fim
+  INICIO -.-&gt;|"Solicita Projeto Básico"| DOCUMENTO[["CI EEPMT"]]
 
+  classDef inicio stroke:#0f0
+  classDef fim stroke:#f00
+  style DOCUMENTO stroke-dasharray: 5 5</code></pre>
+<pre class="mermaid"><code>---
+title: Diagrama de interação - Projeto Básico
+---
+sequenceDiagram
+    Participant Controle de Qualidade
+    Participant GED
+    Participant Projetista
+    Participant Contratos
+    Controle de Qualidade--&gt;&gt;Projetista: Apresenta escopo do projeto
+    Activate Projetista
+    Projetista-&gt;&gt;Controle de Qualidade: Envia lista de documentos e participantes
+    Deactivate Projetista
+    Contratos-&gt;&gt;Controle de Qualidade: Envia lista de participantes
+    Controle de Qualidade--&gt;&gt;GED: Solicita abertura de projeto
+    Controle de Qualidade-&gt;&gt;GED: Envia LD e lista de participantes consolidada
+    Loop Elaboração de projetos
+        Activate Projetista
+        Projetista-&gt;&gt;GED: Carrega documento para análise
+        Deactivate Projetista
+        GED--&gt;&gt;Controle de Qualidade: Notifica novo documento
+        Activate Controle de Qualidade
+        Controle de Qualidade-&gt;&gt;GED: Analisa documento carregado
+        Deactivate Controle de Qualidade
+        GED--&gt;&gt;Projetista: Notifica documento analisado
+        Activate Projetista
+        Deactivate Projetista
+    End
+    Activate Projetista
+    Projetista-&gt;&gt;GED: Retorna documento revisado
+    Deactivate Projetista
+    GED--&gt;&gt;Controle de Qualidade: Notifica documento retornado
+    Activate Controle de Qualidade
+    Controle de Qualidade-&gt;&gt;GED: Emite documentos para construção/fabricação
+    Deactivate Controle de Qualidade
+    GED--&gt;&gt;Contratos: Notifica documento para contratação
+    Contratos-&gt;&gt;GED: Acessa documentos aprovados</code></pre>
+<pre class="mermaid"><code>---
+title: Diagrama de interação - Projeto Executivo
+---
+sequenceDiagram
+    Participant Engenharia do proprietário
+    Participant Controle de Qualidade
+    Participant GED
+    Participant Projetista
+    Participant Fabricante
+    Participant Inspeção
+    Participant Fiscalização/Implantação
+    Engenharia do proprietário--&gt;Fiscalização/Implantação: Apresentação do escopo do projeto
+    Activate Projetista
+    Projetista-&gt;&gt;Controle de Qualidade: Envia lista de documentos para análise
+    Deactivate Projetista
+    Activate Controle de Qualidade
+    Controle de Qualidade-&gt;&gt;Engenharia do proprietário: Envia LD analisada
+    Deactivate Controle de Qualidade
+    Controle de Qualidade-&gt;&gt;Engenharia do proprietário: Envia lista de participantes
+    Projetista-&gt;&gt;Engenharia do proprietário: Envia lista de participantes
+    Fabricante-&gt;&gt;Engenharia do proprietário: Envia lista de participantes
+    Inspeção-&gt;&gt;Engenharia do proprietário: Envia lista de participantes
+    Fiscalização/Implantação-&gt;&gt;Engenharia do proprietário: Envia lista de participantes
+    Engenharia do proprietário--&gt;&gt;GED: Solicita abertura de projeto
+    Engenharia do proprietário-&gt;&gt;GED: Envia LD e lista de participantes consolidada
+    rect rgb(125, 125, 85)
+    Loop Elaboração de projetos de fabricação
+        Activate Fabricante
+        Fabricante-&gt;&gt;GED: Carrega documento para análise
+        Deactivate Fabricante
+        GED--&gt;&gt;Engenharia do proprietário: Notifica novo documento
+        Activate Engenharia do proprietário
+        GED--&gt;&gt;Controle de Qualidade: Notifica novo documento
+        Activate Controle de Qualidade
+        Controle de Qualidade-&gt;&gt;GED: Analisa documento carregado
+        Deactivate Controle de Qualidade
+        GED--&gt;&gt;Engenharia do proprietário: Notifica documento analisado
+        Activate Engenharia do proprietário
+        Engenharia do proprietário-&gt;&gt;GED: Atesta documento analisado
+        Deactivate Engenharia do proprietário
+        Deactivate Engenharia do proprietário
+        GED--&gt;&gt;Fabricante: Notifica documento analisado
+        Activate Fabricante
+        Deactivate Fabricante
+    End
+    Opt Elaboração de projetos de fabricação
+        Activate Fabricante
+        Fabricante-&gt;&gt;GED: Carrega documento para análise
+        Deactivate Fabricante
+        GED--&gt;&gt;Engenharia do proprietário: Notifica novo documento
+        GED--&gt;&gt;Controle de Qualidade: Notifica novo documento
+        Activate Controle de Qualidade
+        Engenharia do proprietário--&gt;&gt;GED: Notifica bypass
+        Controle de Qualidade-&gt;&gt;GED: Analisa documento carregado
+        Deactivate Controle de Qualidade
+        GED--&gt;&gt;Fabricante: Notifica documento analisado
+        Activate Fabricante
+        Deactivate Fabricante
+    End
+    Activate Fabricante
+    Fabricante-&gt;&gt;GED: Retorna documento revisado
+    Deactivate Fabricante
+    GED--&gt;&gt;Engenharia do proprietário: Notifica documento retornado
+    Activate Engenharia do proprietário
+    GED--&gt;&gt;Controle de Qualidade: Notifica documento retornado
+    Engenharia do proprietário-&gt;&gt;GED: Emite documentos para fabricação
+    Deactivate Engenharia do proprietário
+    GED--&gt;&gt;Fabricante: Notifica documento para fabricação
+    GED--&gt;&gt;Inspeção: Notifica documento para fabricação
+    Fabricante-&gt;&gt;GED: Acessa documentos aprovados
+    Inspeção-&gt;&gt;GED: Acessa documentos aprovados
+    End
+    rect rgb(85, 125, 125)
+    Loop Elaboração de projetos executivos
+        Activate Projetista
+        Projetista-&gt;&gt;GED: Carrega documento para análise
+        Deactivate Projetista
+        GED--&gt;&gt;Engenharia do proprietário: Notifica novo documento
+        Activate Engenharia do proprietário
+        GED--&gt;&gt;Controle de Qualidade: Notifica novo documento
+        Activate Controle de Qualidade
+        Controle de Qualidade-&gt;&gt;GED: Analisa documento carregado
+        Deactivate Controle de Qualidade
+        GED--&gt;&gt;Engenharia do proprietário: Notifica documento analisado
+        Activate Engenharia do proprietário
+        Engenharia do proprietário-&gt;&gt;GED: Atesta documento analisado
+        Deactivate Engenharia do proprietário
+        Deactivate Engenharia do proprietário
+        GED--&gt;&gt;Projetista: Notifica documento analisado
+        Activate Projetista
+        Deactivate Projetista
+    End
+    Opt Elaboração de projetos executivos
+        Activate Projetista
+        Projetista-&gt;&gt;GED: Carrega documento para análise
+        Deactivate Projetista
+        GED--&gt;&gt;Engenharia do proprietário: Notifica novo documento
+        GED--&gt;&gt;Controle de Qualidade: Notifica novo documento
+        Activate Controle de Qualidade
+        Engenharia do proprietário--&gt;&gt;GED: Notifica bypass
+        Controle de Qualidade-&gt;&gt;GED: Analisa documento carregado
+        Deactivate Controle de Qualidade
+        GED--&gt;&gt;Projetista: Notifica documento analisado
+        Activate Projetista
+        Deactivate Projetista
+    End
+    Activate Projetista
+    Projetista-&gt;&gt;GED: Retorna documento revisado
+    Deactivate Projetista
+    GED--&gt;&gt;Engenharia do proprietário: Notifica documento retornado
+    Activate Engenharia do proprietário
+    GED--&gt;&gt;Controle de Qualidade: Notifica documento retornado
+    Engenharia do proprietário-&gt;&gt;GED: Emite documentos para construção
+    Deactivate Engenharia do proprietário
+    GED--&gt;&gt;Fiscalização/Implantação: Notifica documento para execução
+    Fiscalização/Implantação-&gt;&gt;GED: Acessa documentos aprovados
+    End</code></pre>
+<pre class="mermaid"><code>---
+title: Fluxo do repositório
+---
+%%{init: { 'gitGraph': {'showBranches': true, 'showCommitLabel':false,'mainBranchName': 'Consolidado'}} }%%
+      gitGraph TB:
+        commit type:REVERSE
+        commit tag:"Revisão 005"
+        branch SGPMR
+        commit tag:"Revisão 00A"
+        commit type:HIGHLIGHT tag:"Revisão 001"
+        checkout Consolidado
+        branch Etapa_acessante
+        checkout Consolidado
+        merge SGPMR tag:"Revisão 006"
+        commit tag:"Revisão 006"
+        checkout Etapa_acessante
+        commit tag:"Revisão 00A"
+        commit tag:"Revisão 00B"
+        checkout Consolidado
+        branch Etapa_03_PB
+        commit tag:"Revisão 00A"
+        checkout Etapa_acessante
+        commit tag:"Revisão 00C"
+        checkout Etapa_03_PB
+        commit tag:"Revisão 00B"
+        commit type:HIGHLIGHT tag:"Revisão 000"
+        branch Etapa_03_PE
+        commit tag:"Revisão 00A"
+        commit type:HIGHLIGHT tag:"Revisão 000"
+        commit tag:"Revisão 01A"
+        commit tag:"Revisão 01B"
+        commit type:HIGHLIGHT tag:"Revisão 001"
+        checkout Consolidado
+        merge Etapa_03_PE tag:"Revisão 007"
+        checkout Etapa_acessante
+        commit type:HIGHLIGHT tag:"Revisão 000"
+        checkout Consolidado
+        merge Etapa_acessante tag:"Revisão 008"</code></pre>
 
 
 

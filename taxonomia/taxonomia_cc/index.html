@@ -274,6 +274,26 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roadmap
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -288,10 +308,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -302,8 +322,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Taxonomia
           </label>
@@ -606,10 +626,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -620,8 +640,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Especificações Legadas
           </label>
@@ -920,10 +940,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -934,8 +954,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Instruções
           </label>
@@ -1039,7 +1059,29 @@
 
 <h1 id="numero-da-etapa">NÚMERO DA ETAPA</h1>
 <h2 id="aabbbcc-ddd-ee-ffggg-hhhh-iii">AABBB.<strong>CC</strong>-DDD-EE-FF.GGG-HHHH-III</h2>
-<p>Texto descritivo</p>
+<p>A numeração das etapas se dará pela combinação de dois caracteres alfanuméricos pertencente ao seguinte conjunto:
+$$
+[0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+$$
+Sua implementação seguirá ordem <strong>lexicográfica</strong> (como a ordem alfabética em dicionários), um algoritmo de fácil implementação por sistemas computacionais.</p>
+<p>Segue abaixo um exemplo de ordenação crescente de números aleatório:
+$$
+00 &lt; 01 &lt; 09 &lt; 0A &lt; 0B &lt; 0Z &lt; 10 &lt; 19 &lt; 1A &lt; 23 &lt; AA &lt; B3 &lt; CG &lt; ZZ
+$$
+Nesse sistema a quantidade total de etapas pelas combinações possíveis é:
+$$
+(10 + 26)^2 = 1296
+$$
+A adoção deste sistema se justifica pela quantidade de obras, principalmente de pequeno porte, à que estão sujeitas as instalações no modelo setorial e para facilitar a adoção de valores reservados; pois, por apresentar combinação de números e letras, este sistema permite combinações de fácil leitura e interpretação para aplicação em documentos específicos que têm escopo mais amplo e atendem diversas etapas de uma vez, como é o caso dos desenhos consolidados e dos padrões de engenharia. Assim:</p>
+<ul>
+<li><strong>00</strong> é reservado para os desenhos consolidados do "conforme construído";</li>
+<li><strong>CH</strong> é reservado para documentos padrões de engenharia Chesf;</li>
+<li><strong>EN</strong> é reservado para documentos padrões de engenharia Eletronorte;</li>
+<li><strong>ES</strong> é reservado para documentos padrões de engenharia Eletrosul;</li>
+<li><strong>FU</strong> é reservado para documentos padrões de engenharia Furnas;</li>
+<li><strong>PE</strong> é reservado para padrões de engenharia geral.</li>
+</ul>
+<p>A tabela abaixo apresenta o campo <strong>CC</strong> com descrição, bem como os números reservados que não devem ser usados para as etapas.</p>
 <h3 id="tabela-3-cc-numero-da-etapa-do-empreendimento"><strong>Tabela 3</strong>: CC – Número da etapa do empreendimento</h3>
 <table>
 <thead>
@@ -1050,28 +1092,12 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">01 a 99</td>
-<td style="text-align: left;">Etapas</td>
-</tr>
-<tr>
-<td style="text-align: center;">A1 a A9, AA a AZ</td>
-<td style="text-align: left;">Etapas</td>
-</tr>
-<tr>
-<td style="text-align: center;">...</td>
-<td style="text-align: left;">...</td>
-</tr>
-<tr>
-<td style="text-align: center;">Z1 a Z9, ZA a ZZ</td>
-<td style="text-align: left;">Etapas</td>
-</tr>
-<tr>
-<td style="text-align: center;">##</td>
-<td style="text-align: left;">Valores reservados:</td>
+<td style="text-align: center;">01 a ZZ</td>
+<td style="text-align: left;">Etapas 01 a ZZ (ordem lexicográfica)</td>
 </tr>
 <tr>
 <td style="text-align: center;">00</td>
-<td style="text-align: left;">Como construído</td>
+<td style="text-align: left;">Projeto consolidado (conforme construído)</td>
 </tr>
 <tr>
 <td style="text-align: center;">CH</td>
@@ -1095,15 +1121,6 @@
 </tr>
 </tbody>
 </table>
-<p>.CC é o campo para o número do empreendimento; neste, algumas numerações são reservadas, como segue:</p>
-<ul>
-<li>00 é reservado para o conforme construído;</li>
-<li>CH é reservado para documentos padrões de engenharia Chesf;</li>
-<li>EN é reservado para documentos padrões de engenharia Eletronorte;</li>
-<li>ES é reservado para documentos padrões de engenharia Eletrosul;</li>
-<li>FU é reservado para documentos padrões de engenharia Furnas;</li>
-<li>PE é reservado para padrões de engenharia geral.</li>
-</ul>
 
 
 
