@@ -31,7 +31,7 @@ A tabela abaixo apresenta o campo **CC** com descrição, bem como os números r
 
 | Campo CC | Descrição                                 |
 | :------: | :---------------------------------------- |
-| 01 a ZZ  | Etapas 01 a ZZ                            |
+| 01 a ZZ  | Etapas 01 a ZZ (ordem lexicográfica)      |
 |    00    | Projeto consolidado (conforme construído) |
 |    CH    | Padrão de engenharia Chesf                |
 |    EN    | Padrão de engenharia Eletronorte          |

@@ -84,7 +84,7 @@ Texto descritivo
 |         SE         |    SEU    | Subestação da Usina                                             |
 |         UH         |    TAG    | Tomada d'Água                                                   |
 |         UH         |    TOR    | Torre                                                           |
-|         EO         |    TOR    | Torre de Medição                                                |
+|         EO         |    TOM    | Torre de Medição                                                |
 |         UH         |    TRE    | Transformador de Elevação                                       |
 |         UH         |    TBS    | Tubo de Sucção                                                  |
 |         UH         |    TAD    | Túneis de Adução                                                |
