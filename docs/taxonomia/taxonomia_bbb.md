@@ -9,11 +9,12 @@ Texto descritivo
 | Campo BBB | Descrição            |
 | :-------: | :------------------- |
 |    ELB    | Geral Eletrobras     |
+|    CHF    | Geral Chesf          |
+|    ELN    | Geral Eletronorte    |
+|    ELS    | Geral Eletrosul      |
+|    FUR    | Geral Furnas         |
 |    ENG    | Padrão de Engenharia |
-|    TUC    | Tucuruí              |
-|    CNU    | Coaracy Nunes        |
-|    FUR    | Furnas               |
-|    IGT    | Igaporã III          |
 |    ...    | ...                  |
+|    IGT    | Igaporã III          |
 
-Para LTs utilizar o código da instalação fonte.
+Para LTs utilizar o código da instalação fonte (montante).

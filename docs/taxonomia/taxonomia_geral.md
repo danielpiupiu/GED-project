@@ -70,20 +70,13 @@ _
                         |
                         |____Documento SEIGT.02-SE1-PB-ELM-LM-0002-00A
 ```
+# TIPO DA INSTALAÇÃO
 
-O campo de revisão e extensão não precisam ser apontadas na taxonomia.
+## **AA**BBB.CC-DDD-EE-FF.GGG-HHHH-III
 
-Instalações/ Unidade seriam tabeladas por letras com a denominação (usina, subestação, etc.) (uma sugestão seria utilizar os dígitos do ONS)
-
-Existe a necessidade de desenvolver a taxonomia compatível com projetos simultâneos?
-
-Ou as etapas concomitantes poderiam permanecer apenas como metadata e informação no carimbo?
-
-AABBB, onde AA representa o tipo da instalação (UH Usina Hid., ST sub. trans., LT Lin. trans.) e BBB representa a nome da instalação (TUC Tucuruí, FUR Furnas, etc.)
+O tipo da instalação
 
 ### **Tabela 1**: AA – Tipo da instalação
-
-**Tipo da instalação**: hidro, termo, eólica, solar, nuclear; subestação, linha, estação repetidora; PCH, subestação, LD, etc
 
 | Campo AA | Descrição                            |
 | :------: | :----------------------------------- |
@@ -99,81 +92,175 @@ AABBB, onde AA representa o tipo da instalação (UH Usina Hid., ST sub. trans.,
 |    RP    | Estação repetidora/ telecomunicações |
 |   ...    | ...                                  |
 
+# NOME DA INSTALAÇÃO
+
+## AA**BBB**.CC-DDD-EE-FF.GGG-HHHH-III
+
+Texto descritivo
+
 ### **Tabela 2**: BBB – Nome da instalação
 
 | Campo BBB | Descrição            |
 | :-------: | :------------------- |
 |    ELB    | Geral Eletrobras     |
+|    CHF    | Geral Chesf          |
+|    ELN    | Geral Eletronorte    |
+|    ELS    | Geral Eletrosul      |
+|    FUR    | Geral Furnas         |
 |    ENG    | Padrão de Engenharia |
-|    TUC    | Tucuruí              |
-|    CNU    | Coaracy Nunes        |
-|    FUR    | Furnas               |
-|    IGT    | Igaporã III          |
 |    ...    | ...                  |
+|    IGT    | Igaporã III          |
+
+Para LTs utilizar o código da instalação fonte (montante).
+
+# NÚMERO DA ETAPA
+
+## AABBB.**CC**-DDD-EE-FF.GGG-HHHH-III
+
+A numeração das etapas se dará pela combinação de dois caracteres alfanuméricos pertencente ao seguinte conjunto:
+$$
+[0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+$$
+Sua implementação seguirá ordem **lexicográfica** (como a ordem alfabética em dicionários), um algoritmo de fácil implementação por sistemas computacionais.
+
+Segue abaixo um exemplo de ordenação crescente de números aleatório:
+$$
+00 < 01 < 09 < 0A < 0B < 0Z < 10 < 19 < 1A < 23 < AA < B3 < CG < ZZ
+$$
+Nesse sistema a quantidade total de etapas pelas combinações possíveis é:
+$$
+(10 + 26)^2 = 1296
+$$
+A adoção deste sistema se justifica pela quantidade de obras, principalmente de pequeno porte, à que estão sujeitas as instalações no modelo setorial e para facilitar a adoção de valores reservados; pois, por apresentar combinação de números e letras, este sistema permite combinações de fácil leitura e interpretação para aplicação em documentos específicos que têm escopo mais amplo e atendem diversas etapas de uma vez, como é o caso dos desenhos consolidados e dos padrões de engenharia. Assim:
+
+- **00** é reservado para os desenhos consolidados do "conforme construído";
+- **CH** é reservado para documentos padrões de engenharia Chesf;
+- **EN** é reservado para documentos padrões de engenharia Eletronorte;
+- **ES** é reservado para documentos padrões de engenharia Eletrosul;
+- **FU** é reservado para documentos padrões de engenharia Furnas;
+- **PE** é reservado para padrões de engenharia geral.
+
+A tabela abaixo apresenta o campo **CC** com descrição, bem como os números reservados que não devem ser usados para as etapas.
 
 ### **Tabela 3**: CC – Número da etapa do empreendimento
 
-|     Campo CC     | Descrição                        |
-| :--------------: | :------------------------------- |
-|     01 a 99      | Etapas                           |
-| A1 a A9, AA a AZ | Etapas                           |
-|       ...        | ...                              |
-| Z1 a Z9, ZA a ZZ | Etapas                           |
-|        ##        | Valores reservados:              |
-|        00        | Como construído                  |
-|        CH        | Padrão de engenharia Chesf       |
-|        EN        | Padrão de engenharia Eletronorte |
-|        ES        | Padrão de engenharia Eletrosul   |
-|        FU        | Padrão de engenharia Furnas      |
-|        PE        | Padrão de engenharia Geral       |
+| Campo CC | Descrição                                 |
+| :------: | :---------------------------------------- |
+| 01 a ZZ  | Etapas 01 a ZZ (ordem lexicográfica)      |
+|    00    | Projeto consolidado (conforme construído) |
+|    CH    | Padrão de engenharia Chesf                |
+|    EN    | Padrão de engenharia Eletronorte          |
+|    ES    | Padrão de engenharia Eletrosul            |
+|    FU    | Padrão de engenharia Furnas               |
+|    PE    | Padrão de engenharia Geral                |
 
+# SETOR DA INSTALAÇÃO
 
-![Figura 0](../img/brainstorm_figura0.jpg)
+## AABBB.CC-**DDD**-EE-FF.GGG-HHHH-III
 
-.CC é o campo para o número do empreendimento; neste, algumas numerações são reservadas, como segue:
-
-- 00 é reservado para o conforme construído;
-- CH é reservado para documentos padrões de engenharia Chesf;
-- EN é reservado para documentos padrões de engenharia Eletronorte;
-- ES é reservado para documentos padrões de engenharia Eletrosul;
-- FU é reservado para documentos padrões de engenharia Furnas;
-- PE é reservado para padrões de engenharia geral.
-
-``EX: SEIGT.00-SE2-CC-ELM-DE-0001-004``
+Texto descritivo
 
 ### **Tabela 4**: DDD - Identificação do setor da Instalação por tipo de instalação
 
-| Tipo da instalação | Campo DDD | Descrição                     |
-| :----------------: | :-------: | :---------------------------- |
-|         GR         |    GRL    | Geral                         |
-|         UH         |    USN    | Usina                         |
-|         UH         |    CSF    | Casa de Força                 |
-|         UH         |    EDC    | Edifício de Comando           |
-|         UH         |    TMA    | Tomada d'Água                 |
-|         UH         |    TBS    | Tubo de Sucção                |
-|         UH         |    CNA    | Canal de Adução               |
-|         UH         |    CNF    | Canal de Fuga                 |
-|         UH         |    VRT    | Vertedouro                    |
-|         UH         |    BGP    | Barragem Principal            |
-|         UH         |    RSV    | Reservatório                  |
-|         UH         |    SEU    | Subestação da Usina           |
-|         UH         |    NCL    | Nacele                        |
-|         UH         |    TOR    | Torre                         |
-|         UH         |    HUB    | Hub                           |
-|         UH         |    AEG    | Aerogerador                   |
-|         UH         |    FND    | Fundação                      |
-|         UH         |    APT    | Acesso/Plataforma             |
-|         UH         |    LTU    | Linha de Transmissão da Usina |
-|         UH         |    UNG    | Unidade Geradora              |
-|         UH         |    MDF    | Módulo Fotovoltaico           |
-|         UH         |    ETC    | Eletrocentro                  |
-|         SE         |    SE0    | Pátio de 69 kV                |
-|         SE         |    SE1    | Pátio de 138 kV               |
-|         SE         |    SE2    | Pátio de 230 kV               |
-|         SE         |    SE5    | Pátio de 500 kV               |
-|         SE         |    CSR    | Casa de relés                 |
-|         SE         |    CSC    | Casa de comando               |
-|         LT         |    RAM    | Ramal de LT                   |
+| Tipo da instalação | Campo DDD | Descrição                                                       |
+| :----------------: | :-------: | :-------------------------------------------------------------- |
+|         UH         |    APT    | Acesso/Plataforma                                               |
+|         GR         |    ACI    | Acessos Internos                                                |
+|         EO         |    AEG    | Aerogerador                                                     |
+|         EO         |    A00    | Aerogerador – Geral                                             |
+|         GR         |    ALM    | Almoxarifado                                                    |
+|         EO         |    ANM    | Anemômetros                                                     |
+|         UH         |    AMT    | Área de Montagem                                                |
+|         UH         |    BGP    | Barragem Principal                                              |
+|         UH         |    CNA    | Canal de Adução                                                 |
+|         UH         |    CNF    | Canal de Fuga                                                   |
+|         GR         |    COB    | Canteiro de Obras                                               |
+|         SE         |    CSC    | Casa de comando                                                 |
+|         UH         |    CSF    | Casa de Força                                                   |
+|         UH         |    CMQ    | Casa de Máquinas                                                |
+|         SE         |    CSR    | Casa de relés                                                   |
+|         UH         |    CSA    | Casa dos Serviços Auxiliares                                    |
+|         UH         |    CDA    | Castelo D’Água                                                  |
+|         UH         |    CHA    | Chaminé de Equilíbrio                                           |
+|         UH         |    CGE    | Circuito de Geração                                             |
+|         EO         |    CDA    | Coletor de Dados Anemométricos                                  |
+|         UH         |    TFO    | Conduto Forçado, Túnel Forçado                                  |
+|         LT         |    CNX    | Conexão ao Sistema Interligado Nacional                         |
+|         GR         |    DPG    | Depósito de Gases                                               |
+|         GR         |    DPQ    | Depósito de Produtos Químicos                                   |
+|         UH         |    DSR    | Desvio do Rio                                                   |
+|         UH         |    DIK    | Diques                                                          |
+|         UH         |    ECL    | Eclusa                                                          |
+|         UH         |    EDC    | Edifício de Comando                                             |
+|         UH         |    ETC    | Eletrocentro                                                    |
+|         UH         |    ENC    | Ensecadeira                                                     |
+|         EO         |    ESM    | Estação de Monitoramento                                        |
+|         GR         |    EFE    | Estradas de Ferro                                               |
+|         GR         |    ERR    | Estradas de Rodagem                                             |
+|         UH         |    FND    | Fundação                                                        |
+|         GR         |    GCA    | Galerias de Cabos                                               |
+|         UH         |    GER    | Gerador                                                         |
+|         GR         |    GRL    | Geral                                                           |
+|         GR         |    GUA    | Guarita                                                         |
+|         UH         |    HUB    | Hub                                                             |
+|         GR         |    LAB    | Laboratório                                                     |
+|         UH         |    LTU    | Linha de Transmissão da Usina                                   |
+|         EO         |    M00    | Módulo de Agrupamento de Aerogeradores                          |
+|         FV         |    MDF    | Módulo Fotovoltaico                                             |
+|         FV         |    MSO    | Módulo Solar                                                    |
+|         UH         |    CON    | Muros de Contenção                                              |
+|         UH         |    MPO    | Muros de Proteção de Obras Hidráulicas                          |
+|         UH         |    MTA    | Muros de Transição ou Ala                                       |
+|         EO         |    NCL    | Nacele                                                          |
+|         GR         |    OCV    | Obras Civis                                                     |
+|         GR         |    OAC    | Obras de Apoio e Complementares                                 |
+|         UH         |    ODR    | Obras de Desvio do Rio                                          |
+|         UH         |    ORS    | Obras do Reservatório                                           |
+|         GR         |    OFI    | Oficinas                                                        |
+|         EO         |    PQE    | Parque Eólico                                                   |
+|         SE         |    SE1    | Pátio de 138 kV                                                 |
+|         SE         |    SE2    | Pátio de 230 kV                                                 |
+|         SE         |    SE5    | Pátio de 500 kV                                                 |
+|         SE         |    SE0    | Pátio de 69 kV                                                  |
+|         GR         |    PLV    | Plano Viário                                                    |
+|         GR         |    POV    | Pontes e Viadutos                                               |
+|         UH         |    PON    | Pontes, Passarelas                                              |
+|         UH         |    PFU    | Porto Fluvial                                                   |
+|         GR         |    PAD    | Prédio Administrativo                                           |
+|         LT         |    RAM    | Ramal de LT                                                     |
+|         LT         |    RMT    | Rede de Média Tensão                                            |
+|         GR         |    REF    | Refeitórios                                                     |
+|         UH         |    RSV    | Reservatório                                                    |
+|         UH         |    RPR    | Rio Principal                                                   |
+|         EO         |    SDV    | Sensor de direção de vento                                      |
+|         UH         |    CTA    | Setor de Captação, Armazenamento e Tratamento de Água           |
+|         GR         |    RCO    | Setor de Recebimento, Armazenamento e Tratamento de Combustível |
+|         UH         |    STP    | Sistema de Transposição de Peixes                               |
+|         GR         |    SAP    | Sítio do Aproveitamento                                         |
+|         SE         |    SEU    | Subestação da Usina                                             |
+|         UH         |    TAG    | Tomada d'Água                                                   |
+|         UH         |    TOR    | Torre                                                           |
+|         EO         |    TOM    | Torre de Medição                                                |
+|         UH         |    TRE    | Transformador de Elevação                                       |
+|         UH         |    TBS    | Tubo de Sucção                                                  |
+|         UH         |    TAD    | Túneis de Adução                                                |
+|         UH         |    TUD    | Túneis de Desvio                                                |
+|         UH         |    TAC    | Túnel de Acesso                                                 |
+|         UH         |    TDR    | Túnel de Drenagem                                               |
+|         UH         |    FUG    | Túnel de Fuga                                                   |
+|         UH         |    TUR    | Turbina                                                         |
+|         UH         |    UNG    | Unidade Geradora                                                |
+|         UH         |    USN    | Usina                                                           |
+|         UH         |    VAZ    | Vazão Sanitária                                                 |
+|         UH         |    VTD    | Vertedouro                                                      |
+|         UH         |    VTC    | Vertedouro Complementar                                         |
+|         GR         |    VRE    | Vilas Residenciais                                              |
+
+# FINALIDADE DO PROJETO
+
+## AABBB.CC-DDD-**EE**-FF.GGG-HHHH-III
+
+Texto descritivo
 
 ### **Tabela 5**: EE – Finalidade do Projeto
 
@@ -185,6 +272,12 @@ AABBB, onde AA representa o tipo da instalação (UH Usina Hid., ST sub. trans.,
 |    PE    | Projeto executivo               |
 |    CC    | Conforme construído             |
 |    SB    | Segurança de barragem           |
+
+# DISCIPLINA
+
+## AABBB.CC-DDD-EE-**FF**.GGG-HHHH-III
+
+Texto descritivo
 
 ### **Tabela 6**: FF - Identificação da Disciplina
 
@@ -210,241 +303,144 @@ AABBB, onde AA representa o tipo da instalação (UH Usina Hid., ST sub. trans.,
 |   ...    | ...                                 |
 
 > __*__ Em Caso de Disciplina ‘Geral’ localizar o sistema mais próximo na tabela 7.
+ 
+# TIPOLOGIA
+
+## AABBB.CC-DDD-EE-FF.**GGG**-HHHH-III
+
+Texto descritivo
 
 ### **Tabela 7**: GGG - Tipologia do documento
 
-**Tipo do documento**: desenho, arranjo, vista, corte, pradrão, modelo, uniformização, nota técnica, relatório, certificado, ata, R3, R4, etc.
+**Tipo do documento**: desenho, arranjo, vista, corte, padrão, modelo, uniformização, nota técnica, relatório, certificado, ata, R3, R4, etc.
 
-| Campo GGG | Descrição                                              |
-| :-------: | :----------------------------------------------------- |
-|    AA     | Arquitetura / Topologia de Redes                       |
-|    AC     | Ação Corretiva e Preventiva                            |
-|    AQ     | Atestado de Qualidade                                  |
-|    BI     | Boletim de Inspeção                                    |
-|    CA     | Certificado de Materiais                               |
-|    CC     | Certificado de Conclusão de Comissionamento            |
-|    CM     | Certificado de Conclusão de Montagem                   |
-|    CP     | Critério de Projeto                                    |
-|    CQ     | Croquis                                                |
-|    CR     | Cronograma                                             |
-|    CT     | Catálogo                                               |
-|    DB     | Data Book                                              |
-|    DD     | Diagrama Dimensional                                   |
-|    DE     | Desenhos Civil, Elétrico e Mecânico                    |
-|    DF     | Diagrama Funcional                                     |
-|    DI     | Diagrama de Interligação de Equipamentos e Painéis     |
-|    DL     | Diagrama Lógico                                        |
-|    DM     | Detalhes de Montagem de Equipamentos                   |
-|    DO     | Diário de Obra                                         |
-|    DT     | Detalhes Típicos/Padrões                               |
-|    DU     | Diagramas Unifilares e Esquemáticos                    |
-|    ED     | Edital ANEEL                                           |
-|    ET     | Especificação Técnica                                  |
-|    FD     | Folha de Dados do Equipamento                          |
-|    FI     | Diagrama de Fiação                                     |
-|    FL     | Fluxograma                                             |
-|    FR     | Formulário                                             |
-|    FT     | Diagrama Funcional Integrado                           |
-|    IE     | Instruções Executivas                                  |
-|    IF     | Documento informativo                                  |
-|    IT     | Instruções de Trabalho                                 |
-|    LA     | Lista de Aprovisionamento de Materiais                 |
-|    LC     | Lista de Cabos                                         |
-|    LD     | Lista de Documentos                                    |
-|    LE     | Lista de Estimativas de Materiais                      |
-|    LF     | Lista de Ferro                                         |
-|    LI     | Lista de Instrumentos                                  |
-|    LM     | Lista de Materiais                                     |
-|    LP     | Lista de Pontos / Sinais                               |
-|    LQ     | Lista de Equipamentos                                  |
-|    MC     | Memória de Cálculo                                     |
-|    MD     | Memorial Descritivo                                    |
-|    MM     | Manual de Montagem                                     |
-|    MN     | Manual de Comissionamento                              |
-|    MO     | Manual de Operação e Manutenção                        |
-|    MP     | Modificação de Projeto no Campo                        |
-|    MQ     | Manual de Qualidade                                    |
-|    NC     | Não Conformidades                                      |
-|    OC     | Orçamento                                              |
-|    OR     | Organograma                                            |
-|    PC     | Plano de Comissionamento                               |
-|    PE     | Programa de Ensaios                                    |
-|    PI     | Plano de Inspeção e Controle da Qualidade (PICQ)       |
-|    PL     | Programa de Treinamento                                |
-|    PN     | Procedimento de Inspeção                               |
-|    PQ     | Plano ou Procedimento de Qualidade                     |
-|    PT     | Procedimento de Teste                                  |
-|    R3     | Relatório R3                                           |
-|    R4     | Relatório R4                                           |
-|    RA     | Relatório de Análise de Documentos Recebidos           |
-|    RD     | Relatório de Documentos                                |
-|    RE     | Relatório de Alteração de Especificação Técnica (RAET) |
-|    RF     | Relatório de Inspeção em Fábrica                       |
-|    RI     | Relatório de Inspeção em Campo                         |
-|    RN     | Ata de Reunião                                         |
-|    RP     | Relatório de Progresso                                 |
-|    RQ     | Relatório de Qualidade                                 |
-|    RT     | Relatório Técnico                                      |
-|    RV     | Relatório de Viagem                                    |
-|    SB     | Lista de Sobressalentes                                |
-|    SX     | Sumário Executivo                                      |
-|    TA     | Teste de Aceitação                                     |
-|    TI     | Tabela de Interligação Externa                         |
-|    PB     | Projeto Básico                                         |
+| Campo GGG | Documento                                                                                                    |
+| :-------: | :----------------------------------------------------------------------------------------------------------- |
+|    AQL    | Certificado - Atestado de Qualidade                                                                          |
+|    CCM    | Certificado - Conclusão de Comissionamento                                                                   |
+|    CMT    | Certificado - Conclusão de Montagem                                                                          |
+|    CTF    | Certificado - Outros                                                                                         |
+|    ACB    | Desenho Técnico - Acabamento                                                                                 |
+|    AST    | Desenho Técnico - Arquitetura de Sistema                                                                     |
+|    ARJ    | Desenho Técnico - Arranjo                                                                                    |
+|    CCT    | Desenho Técnico - Caderno Construtivo                                                                        |
+|    CTE    | Desenho Técnico - Corte                                                                                      |
+|    DDM    | Desenho Técnico - Desenho Dimencional                                                                        |
+|    DMT    | Desenho Técnico - Detalhamento de Montagem                                                                   |
+|    DFA    | Desenho Técnico - Diagrama de Fiação                                                                         |
+|    DIT    | Desenho Técnico - Diagrama de Interligação                                                                   |
+|    DFC    | Desenho Técnico - Diagrama Funcional                                                                         |
+|    DLG    | Desenho Técnico - Diagrama Lógico                                                                            |
+|    DTF    | Desenho Técnico - Diagrama Trifilar                                                                          |
+|    DUF    | Desenho Técnico - Diagrama Unifilar                                                                          |
+|    ELV    | Desenho Técnico - Elevação                                                                                   |
+|    FCD    | Desenho Técnico - Fachada                                                                                    |
+|    ISM    | Desenho Técnico - Isometria                                                                                  |
+|    DSN    | Desenho Técnico - Outros                                                                                     |
+|    PPT    | Desenho Técnico - Perspectiva                                                                                |
+|    PTA    | Desenho Técnico - Planta                                                                                     |
+|    SCO    | Desenho Técnico - Seção                                                                                      |
+|    VTA    | Desenho Técnico - Vista                                                                                      |
+|    ATA    | Diversos - Ata de Reunião                                                                                    |
+|    DIF    | Diversos - Documento Informativo                                                                             |
+|    EAN    | Diversos - Edital ANEEL                                                                                      |
+|    FML    | Diversos - Formulário                                                                                        |
+|    DVS    | Diversos - Outros                                                                                            |
+|    PTN    | Diversos - Programa de Treinamento                                                                           |
+|    AVR    | Documento Legal - Alvará                                                                                     |
+|    LCC    | Documento Legal - Licença                                                                                    |
+|    LLI    | Documento Legal - Licenciamento Ambiental - Licença de Instalação                                            |
+|    LLP    | Documento Legal - Licenciamento Ambiental - Licença Prévia                                                   |
+|    LGL    | Documento Legal - Outros                                                                                     |
+|    ARC    | Documento Técnico - Análise de Riscos                                                                        |
+|    BDS    | Documento Técnico - Base de Dados do Sistema Supervisório                                                    |
+|    CEC    | Documento Técnico - Caderno de Encargos                                                                      |
+|    COB    | Documento Técnico - Canteiro de Obras                                                                        |
+|    CST    | Documento Técnico - Configuração de Sistema                                                                  |
+|    CEX    | Documento Técnico - Cronograma de Execução                                                                   |
+|    CFF    | Documento Técnico - Cronograma Físico-Financeiro                                                             |
+|    DTB    | Documento Técnico - Databook                                                                                 |
+|    WSM    | Documento Técnico - Detalhamento de Fornecimento - Workstatement                                             |
+|    DOB    | Documento Técnico - Diário de Obra                                                                           |
+|    DEA    | Documento Técnico - Dicionário EAP                                                                           |
+|    ETN    | Documento Técnico - Especificação Técnica                                                                    |
+|    EAP    | Documento Técnico - Estrutura Analítica do Projeto (EAP)                                                     |
+|    EOP    | Documento Técnico - Estrutura Organizacional do Projeto                                                      |
+|    FDD    | Documento Técnico - Folha de Dados                                                                           |
+|    LCB    | Documento Técnico - Lista de Cabos                                                                           |
+|    LDC    | Documento Técnico - Lista de Documentos                                                                      |
+|    LEQ    | Documento Técnico - Lista de Equipamentos                                                                    |
+|    LFR    | Documento Técnico - Lista de Ferros                                                                          |
+|    LPS    | Documento Técnico - Lista de Pontos e Sinais do Sistema                                                      |
+|    LSB    | Documento Técnico - Lista de Sobressalentes                                                                  |
+|    MMT    | Documento Técnico - Manual de Montagem                                                                       |
+|    MUS    | Documento Técnico - Manual de Uso                                                                            |
+|    MRP    | Documento Técnico - Matriz de Responsabilidade                                                               |
+|    MCC    | Documento Técnico - Memória de Cálculo                                                                       |
+|    ODT    | Documento Técnico - Orçamento Detalhado                                                                      |
+|    OET    | Documento Técnico - Orçamento Estimado                                                                       |
+|    DCM    | Documento Técnico - Outros                                                                                   |
+|    PIC    | Documento Técnico - Plano de Inspeção e Controle da Qualidade (PICQ)                                         |
+|    QMT    | Documento Técnico - Quantitativo de Materiais                                                                |
+|    RTT    | Documento Técnico - Roteiro de Testes                                                                        |
+|    TED    | Documento Técnico - Tabela de Eletrodutos                                                                    |
+|    TSS    | Documento Técnico - Telas do Sistema Supervisório                                                            |
+|    TAP    | Documento Técnico - Termo de Abertura do Projeto                                                             |
+|    AVB    | Estudos Preliminares - Análise de Viabilidade                                                                |
+|    CQS    | Estudos Preliminares - Croquis                                                                               |
+|    ETR    | Estudos Preliminares - Escolha de Terreno                                                                    |
+|    EIA    | Estudos Preliminares - Estudo de Impacto Ambiental (EIA)                                                     |
+|    LCD    | Estudos Preliminares - Levantamento Cadastral                                                                |
+|    LGT    | Estudos Preliminares - Levantamento Geotécnico                                                               |
+|    LTG    | Estudos Preliminares - Levantamento Topográfico                                                              |
+|    OMD    | Estudos Preliminares - Orçamento Modular                                                                     |
+|    ETD    | Estudos Preliminares - Outros                                                                                |
+|    BIP    | Relatório Técnico - Boletim de Inspeção                                                                      |
+|    RLT    | Relatório Técnico - Outros                                                                                   |
+|    RR1    | Relatório Técnico - R1 - Análise Técnico-Econômica das Alternativas                                          |
+|    RR2    | Relatório Técnico - R2 - Detalhamento da Alternativa de Referência                                           |
+|    RR3    | Relatório Técnico - R3 - Definição da Diretriz de Traçado e Análise Socioambiental para Linha de Transmissão |
+|    RR4    | Relatório Técnico - R4 - Caracterização do Sistema de Transmissão                                            |
+|    RAT    | Relatório Técnico - Relatório de Análise Técnica                                                             |
+|    RIA    | Relatório Técnico - Relatório de Impacto Ambiental (RIMA)                                                    |
+|    RNC    | Relatório Técnico - Relatório de Não Conformidade                                                            |
+|    RRS    | Relatório Técnico - Relatório de Resistividade                                                               |
+|    RSD    | Relatório Técnico - Relatório de Sondagem                                                                    |
+|    TFD    | Relatório Técnico - Relatório Fotográfico Descritivo                                                         |
+|    TAF    | Relatório Técnico - Teste de Aceitação em Fábrica                                                            |
 
-### **Campo**: HHHH - Número sequencial de 0001 a 9999.
+# NUMERO SEQUENCIAL
 
+## AABBB.CC-DDD-EE-FF.GGG-**HHHH**-III
+
+A numeração sequencial poderá ser utilizada para melhor definir subtipos de documentos.
+
+# REVISÃO
+
+## AABBB.CC-DDD-EE-FF.GGG-HHHH-**III**
+
+Codificação para Revisões.
+
+1. Documentos para aprovação serão emitidos com codificação alfanumérica.
+
+2. Documentos Aprovados serão emitidos com codificação numérica.
+    
 ### **Tabela 8**: III - Identificação da revisão
 
-|                        Campo III                        | Descrição                                      |
-| :-----------------------------------------------------: | :--------------------------------------------- |
-|                        000 a 099                        | Revisão numérica - Documentos aprovados        |
-| 00A, 00B, 00C, ...<br> 01A, 01B, ... <br> 02A, 03A, ... | Revisão alfanumérica - Documentos em aprovação |
+|                                 Campo III                                  | Descrição                                      |
+| :------------------------------------------------------------------------: | :--------------------------------------------- |
+|                                  00 a 99                                   | Revisão numérica - Documentos aprovados        |
+| 00A, 00B, 00C, ...<br> 01A, 01B, ... <br> 02A, 03A, ... <br> 99A, 99B, ... | Revisão alfanumérica - Documentos em aprovação |
 
 As revisões se darão de forma regressiva quando o documento ganha o status de aprovado. Esta forma de numeração visa manter o número de algarismos do campo revisão completo desde a primeira revisão, evitando de outra forma uma lógica extra apenas para eliminar caracteres. Assim, numa numeração regressiva, a ordenação dos documentos seguirá como no exemplo abaixo:
 
 - 00A (elaboração inicial)
 - 00B (primeira revisão)
 - 00C (segunda revisão)
-- 000 (documento aprovado)
+- 00 (documento aprovado)
 - 01A (nova revisão)
-- 001 (documento aprovado)
+- 01 (documento aprovado)
 - 02A (nova revisão)
 - 02B (revisão)
-- 002 (documento aprovado)
+- 02 (documento aprovado)
 - ...
-
-____________________________________________________________________________
-
-Outros:
-
-Unificar os status: aprovado, aprovado com cometários, reprovado, aprovado para fabricação, etc.
-Separar fluxos de G&T.
-
-- Projetos básicos
-- Projetos executivos
-- R4
-- Especificações e memórias
-- Inspeção
-- Relatórios EPE
-
-____________________________________________________________________________
-
-### **Tabela ?**: ?? - Identificação da Subdisciplina por Disciplina
-
-**Subdisciplina**: Edificação, fundação, galeria de cabos, barramento aéreo, instalação, barramento de processos, barramento de estação, arquitetura de rede, SDH, SAX, ar condicionado, TAF (CFI), etc.
-
-|  FFF  | Campo ?? | Descrição                                               |
-| :---: | :------: | :------------------------------------------------------ |
-|  ARQ  |    AC    | Acabamentos de Arquitetura                              |
-|  ARQ  |    AR    | Arranjos Gerais/Layout                                  |
-|  ARQ  |    UR    | Urbanismo/Paisagismo                                    |
-|  CIV  |    AR    | Arranjos Gerais/Layout                                  |
-|  CIV  |    DE    | Sistemas de drenagem                                    |
-|  CIV  |    EA    | Armação                                                 |
-|  CIV  |    EF    | Estruturas de concreto - Formas                         |
-|  CIV  |    EM    | Estruturas metálicas                                    |
-|  CIV  |    GG    | Geologia/Geotécnica                                     |
-|  CIV  |    HH    | Hidrologia/Hidráulica                                   |
-|  CIV  |    IN    | Instrumentação Civil                                    |
-|  CIV  |    PV    | Pavimentação e Terraplanagem                            |
-|  CIV  |    RS    | Redes de Serviços                                       |
-|  CIV  |    TR    | Tratamento de Fundações e Taludes                       |
-|  ELE  |    AT    | Aterramento                                             |
-|  ELE  |    BB    | Barramento Blindado de fases isoladas                   |
-|  ELE  |    BC    | Baterias e Carregadores                                 |
-|  ELE  |    BT    | Painel de Serviços Auxiliares de Baixa Tensão (CA/CC)   |
-|  ELE  |    CB    | Cablagem                                                |
-|  ELE  |    CE    | Condutos para Cabos                                     |
-|  ELE  |    CG    | Cubículos Associados ao Gerador                         |
-|  ELE  |    CM    | Cubículos de Serviços Auxiliares de Média Tensão        |
-|  ELE  |    CP    | Sistema de Proteção                                     |
-|  ELE  |    CS    | Sistema de Comando, Controle e Supervisão               |
-|  ELE  |    EE    | Estudos Elétricos                                       |
-|  ELE  |    ES    | Equipamentos de Pátio da Subestação                     |
-|  ELE  |    EX    | Sistema de Excitação                                    |
-|  ELE  |    GD    | Grupo Diesel de Emergência                              |
-|  ELE  |    GE    | Gerador                                                 |
-|  ELE  |    GI    | Barramento Blindado SF6                                 |
-|  ELE  |    IE    | Instalação Elétrica                                     |
-|  ELE  |    IT    | Iluminação e Tomadas                                    |
-|  ELE  |    LT    | Linha de Transmissão                                    |
-|  ELE  |    MT    | Cubículo de Média Tensão                                |
-|  ELE  |    PE    | Painel de Parada de Emergência                          |
-|  ELE  |    PH    | Controle Pitch (Eólica)                                 |
-|  ELE  |    RD    | Registrador Digital de Perturbação (Oscilografia)       |
-|  ELE  |    RL    | Reator Limitador de Corrente                            |
-|  ELE  |    RT    | Regulador de Tensão                                     |
-|  ELE  |    RV    | Regulador de Velocidade                                 |
-|  ELE  |    SA    | Sistema Auxiliares Elétricos                            |
-|  ELE  |    SE    | Sistema de Medição de Energia                           |
-|  ELE  |    SL    | Equipamentos de Saída de Linha                          |
-|  ELE  |    SM    | Sistemas Auxiliares Mecânicos                           |
-|  ELE  |    TE    | Transformador Elevador                                  |
-|  ELE  |    TI    | Transformador de Iluminação                             |
-|  ELE  |    TL    | Sistema de Telecomunicação                              |
-|  ELE  |    TR    | Transformador de Regulação                              |
-|  ELE  |    TS    | Transformador de Serviços Auxiliares                    |
-|  ELE  |    VE    | Sistema de Vigilância Eletrônica                        |
-|  ELE  |    YW    | Controle Yaw (Eólica)                                   |
-|  ELE  |    ST    | String Box                                              |
-|  ELE  |    IV    | Inversor de frequência                                  |
-|  EQP  |    MG    | Máquina Limpa Grades                                    |
-|  EQP  |    PA    | Ponte Rolante Auxiliar                                  |
-|  EQP  |    PJ    | Pórtico Rolante de Jusante do Vertedouro                |
-|  EQP  |    PM    | Pórtico Rolante de Montante do Vertedouro               |
-|  EQP  |    PO    | Ponte Rolante da Oficina Eletromecânica                 |
-|  EQP  |    PP    | Ponte Rolante Principal                                 |
-|  EQP  |    PS    | Pórtico Rolante do Tubo de Sucção                       |
-|  EQP  |    PT    | Pórtico Rolante da Tomada d'água                        |
-|  EQP  |    TM    | Talha Manual                                            |
-|  MEC  |    AC    | Sistema de Ar Comprimido                                |
-|  MEC  |    AF    | Arranjo Físico/Layout                                   |
-|  MEC  |    AI    | Sistema de Combate a Incêndio                           |
-|  MEC  |    AM    | Acabamentos Metálicos                                   |
-|  MEC  |    AN    | Sistema de Água Nebulizada dos Transformadores          |
-|  MEC  |    AP    | Sistema de Água Potável                                 |
-|  MEC  |    AR    | Sistema de Água de Resfriamento                         |
-|  MEC  |    AS    | Sistema de Água de Serviço                              |
-|  MEC  |    CH    | Centrais Hidráulicas                                    |
-|  MEC  |    CO    | Sistema de CO2                                          |
-|  MEC  |    CP    | Comportas                                               |
-|  MEC  |    DR    | Sistema de Drenagem                                     |
-|  MEC  |    EE    | Sistema de Tratamento de Esgoto                         |
-|  MEC  |    EL    | Elevador                                                |
-|  MEC  |    ES    | Sistema de Esgotamento e Enchimento das Unidades        |
-|  MEC  |    GB    | Gear Box (Eólica)                                       |
-|  MEC  |    IN    | Instrumentação                                          |
-|  MEC  |    MA    | Mancais                                                 |
-|  MEC  |    MH    | Sistema de Medições Hidráulicas                         |
-|  MEC  |    MO    | Sistema de Monitoramento                                |
-|  MEC  |    OM    | Oficina Mecânica                                        |
-|  MEC  |    PA    | Pás (Eólica)                                            |
-|  MEC  |    PH    | Controle Pitch (Eólica)                                 |
-|  MEC  |    RV    | Regulador de Velocidade da Turbina                      |
-|  MEC  |    SI    | Sistema de Coleta e Separação de Água/Óleo Isolante     |
-|  MEC  |    SL    | Sistema de Tratamento de Óleo Lubrificante              |
-|  MEC  |    SR    | Sistema de Rebaixamento de Nível                        |
-|  MEC  |    TB    | Tubulação Embutida                                      |
-|  MEC  |    TU    | Turbina                                                 |
-|  MEC  |    TX    | Tubulação Exposta                                       |
-|  MEC  |    VC    | Sistema de Ar Condicionado                              |
-|  MEC  |    VE    | Sistema de Ventilação                                   |
-|  MEC  |    VS    | Vazão Sanitária                                         |
-|  MEC  |    SH    | Sistema Hidráulico de Limpezas dos Módulos Fotovoltaico |
-|  OEM  |    GO    | Geral Operação da Usina                                 |
-|  PLN  |    AE    | Acompanhamento Executivo                                |
-|  PLN  |    CO    | Comissionamento                                         |
-|  PLN  |    FE    | Fornecimento Eletromecânico                             |
-|  PLN  |    FI    | Financeiro                                              |
-|  PLN  |    ME    | Montagem Eletromecânica                                 |
-|  PLN  |    OC    | Obra Civil                                              |
-|  PLN  |    PJ    | Projeto                                                 |
-|  PLN  |    PR    | Programação                                             |
-|  QUA  |    QA    | Auditoria de Sistema de Gestão de Qualidade             |
-|  QUA  |    PL    | Plano                                                   |
-|  QUA  |    PR    | Procedimento                                            |
-|  QUA  |    TR    | Treinamento                                             |
-|  QUA  |    CI    | Convocação de Inspeção                                  |
-|  TEC  |    RG    | Relatório de Gestão de Documentos                       |
-|  GRL  |    GG    | Geral                                                   |
