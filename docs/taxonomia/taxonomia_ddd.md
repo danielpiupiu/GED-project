@@ -50,8 +50,8 @@ Texto descritivo
 |         GR         |    LAB    | Laboratório                                                     |
 |         UH         |    LTU    | Linha de Transmissão da Usina                                   |
 |         EO         |    M00    | Módulo de Agrupamento de Aerogeradores                          |
-|         FV         |    MDF    | Módulo Fotovoltaico                                             |
-|         FV         |    MSO    | Módulo Solar                                                    |
+|         PS         |    MDF    | Módulo Fotovoltaico                                             |
+|         PS         |    MSO    | Módulo Solar                                                    |
 |         UH         |    CON    | Muros de Contenção                                              |
 |         UH         |    MPO    | Muros de Proteção de Obras Hidráulicas                          |
 |         UH         |    MTA    | Muros de Transição ou Ala                                       |
